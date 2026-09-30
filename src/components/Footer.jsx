@@ -73,9 +73,6 @@ export default function Footer({ brand, navLinks, contact }) {
               <MapPin className="w-3.5 h-3.5 text-[#D7C7AE]" />
               <span>{contact.location}</span>
             </li>
-            <li className="text-[11px] text-[#D7C7AE] pt-1">
-              Private Yacht & Helicopter Transfers Available
-            </li>
           </ul>
         </div>
 
@@ -124,8 +121,16 @@ export default function Footer({ brand, navLinks, contact }) {
       <div className="w-[92%] max-w-[1240px] mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
         <p>© 2026 Casa Maria Beachfront Villa. All rights reserved.</p>
 
-        <p className="flex items-center gap-1">
-          <span>Designed with React &amp; Tailwind CSS</span>
+        <p className="flex items-center gap-1.5">
+          <span>Developed by</span>
+          <a
+            href="https://neko-sysdev.online"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#D7C7AE] hover:text-white transition-colors underline underline-offset-4 font-medium"
+          >
+            neko-sysdev.online
+          </a>
         </p>
 
         <button
