@@ -91,3 +91,27 @@ You will instantly receive your live presentation URL (e.g., `https://casamaria.
 - [`vercel.json`](vercel.json): Configured with SPA rewrite rules so direct link navigation never returns a 404 error.
 - [`.gitignore`](.gitignore): Prevents `node_modules/` and local cache from being uploaded.
 - [`vite.config.js`](vite.config.js): Optimized for both local hosting and edge cloud deployment.
+
+---
+
+## 🔧 Troubleshooting: "Command 'npm run build' exited with 126"
+
+### Why this happens:
+Exit code 126 on Vercel/Linux means **"Permission Denied"**. This occurs when the `node_modules` folder was committed to GitHub from a Windows machine. Windows file systems do not preserve Linux execute bits (`+x`) for the binary files in `node_modules/.bin/vite`. When Vercel attempts to execute `vite`, the Linux container rejects execution with error 126.
+
+### How this was resolved:
+1. Untracked `node_modules/` and `dist/` from Git:
+   ```powershell
+   git rm -r --cached node_modules dist
+   ```
+2. Added `.gitignore` to ensure dependencies are never pushed:
+   ```powershell
+   git add .gitignore vercel.json
+   ```
+3. Pushed the clean commit to GitHub:
+   ```powershell
+   git commit -m "fix: remove node_modules and dist from git tracking"
+   git push origin main
+   ```
+4. Vercel now runs a clean Linux `npm install` and executes `npm run build` with full native permissions.
+
