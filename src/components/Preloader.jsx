@@ -21,6 +21,11 @@ export default function Preloader({ onComplete, subtitle = "BEACHFRONT VILLA" })
       }`}
     >
       <div className="flex flex-col items-center text-center">
+        <img
+          src="./img/Logo.jpg"
+          alt="Casa Maria Logo"
+          className="w-24 h-24 rounded-full object-cover border-2 border-[#D7C7AE]/60 shadow-lg mb-5 animate-pulse"
+        />
         <h1 className="text-4xl md:text-5xl font-serif text-[#2F3A33] tracking-wide mb-2">
           Casa Maria
         </h1>

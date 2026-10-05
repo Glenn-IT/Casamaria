@@ -11,7 +11,7 @@ export default function Hero({ data, onOpenBooking }) {
       <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=2000&q=85')`,
+          backgroundImage: `url('${data.image || "./img/villa-panoramic-pool-living.jpg"}')`,
         }}
       />
       {/* Top and horizontal directional gradient overlays */}

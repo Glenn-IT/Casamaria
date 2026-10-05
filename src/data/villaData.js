@@ -22,92 +22,94 @@ export const villaContent = {
       description: "Nestled along the pristine Adriatic shoreline, Casa Maria offers an intimate beachfront sanctuary. Immerse yourself in panoramic ocean vistas, private infinity pools, and bespoke luxury hospitality tailored to your rhythm.",
       ctaPrimary: "Reserve Your Stay",
       ctaSecondary: "Explore Spaces",
+      image: "./img/villa-panoramic-pool-living.jpg",
       highlights: [
         {
           title: "Direct Beach Access",
           desc: "Step directly onto secluded turquoise waters"
         },
         {
-          title: "Private Infinity Pool",
-          desc: "Heated freshwater pool overlooking the horizon"
+          title: "Private Courtyard Pool",
+          desc: "Illuminated two-tier swimming pool courtyard"
         },
         {
           title: "Bespoke Concierge",
-          desc: "Dedicated villa manager, private chef & yacht tender"
+          desc: "Dedicated villa manager, private chef & coastal excursions"
         }
       ]
     },
     suitesSection: {
       kicker: "Accommodations & Suites",
       title: "Designed for effortless grandeur and timeless calm.",
-      description: "Each suite blends natural local stone, warm oak timbers, and floor-to-ceiling glass to dissolve boundaries between lavish interior comfort and the boundless sea."
+      description: "Each suite blends natural textures, warm timber ceilings, and floor-to-ceiling glass to dissolve boundaries between lavish interior comfort and the boundless sea."
     },
     suites: [
       {
         number: "01",
         title: "The Master Shoreline Suite",
-        tag: "Oceanfront • King Bed",
-        desc: "Spectacular 180° unobstructed sea views, private cantilevered terrace, marble soaking bath, and direct terrace access to the morning sunrise.",
+        tag: "High Timber Ceilings • King Bed",
+        desc: "Spacious master bedroom featuring vaulted warm wood ceilings, textured stone-wash walls, air conditioning, and minimalist bespoke furnishings with expansive natural light.",
         sqm: "120 m²",
         capacity: "2 Guests",
         price: "€1,200 / night",
-        image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-master-bedroom.jpg"
       },
       {
         number: "02",
-        title: "Sunset Infinity Pavilion",
-        tag: "Private Pool • Sun Deck",
-        desc: "Direct integration with the heated infinity pool and teak lounge deck. Features an open-air rain shower and an alfresco fireplace for twilight lounging.",
+        title: "Private Pool Courtyard",
+        tag: "Dual Pools • Night LED Illumination",
+        desc: "Direct step-out access to the two-tier private swimming pool courtyard, surrounded by architectural breeze-block walls, stepping stones, and evening mood lighting.",
         sqm: "95 m²",
-        capacity: "2 Guests",
-        price: "€950 / night",
-        image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80"
+        capacity: "Private Courtyard",
+        price: "Included in Villa Stay",
+        image: "./img/villa-pool-night.jpg"
       },
       {
         number: "03",
-        title: "Azure Horizon Penthouse",
-        tag: "Rooftop Terrace • Panoramic",
-        desc: "Perched on the villa's top floor, boasting dramatic coastal vistas, private rooftop jacuzzi, cocktail bar, and bespoke stargazing lounge.",
-        sqm: "140 m²",
-        capacity: "2-4 Guests",
-        price: "€1,450 / night",
-        image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+        title: "Adriatic Shoreline Haven",
+        tag: "Direct Beach Access • Golden Sunsets",
+        desc: "Unrivaled direct access to the secluded sandy beach, where gentle waves meet golden hour skies and tranquil evening sea breezes.",
+        sqm: "Shoreline Access",
+        capacity: "Beachfront",
+        price: "Direct Access",
+        image: "./img/villa-beach-sunset.jpg"
       },
       {
         number: "04",
-        title: "The Mediterranean Garden Villa",
-        tag: "Private Courtyard • Olive Grove",
-        desc: "Tucked inside lush Mediterranean flora and centennial olive trees, offering quiet shaded courtyards, stone fountain, and fragrant citrus aromas.",
+        title: "The Family & Guest Suite",
+        tag: "Custom Bunk Bed • Wardrobe & Vanity",
+        desc: "Thoughtfully crafted family retreat featuring handcrafted dark wood bunk beds, dedicated wardrobe storage, floating vanity desk, and individual climate control.",
         sqm: "110 m²",
-        capacity: "2-3 Guests",
+        capacity: "2-4 Guests",
         price: "€850 / night",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-bunk-suite.jpg"
       },
       {
         number: "05",
-        title: "Grand Salon & Dining Veranda",
-        tag: "Entertaining • Wine Cellar",
-        desc: "Soaring double-height ceilings, hand-carved travertine fireplace, custom dining table seating 14, and temperature-controlled vintage wine cellar.",
+        title: "Grand Living & Dining Salon",
+        tag: "Full Glass Facade • Pool Courtyard View",
+        desc: "Airy open-concept entertaining space with expansive floor-to-ceiling glass doors, solid timber dining table, woven artisanal lighting, and seamless indoor-outdoor pool flow.",
         sqm: "180 m²",
         capacity: "Villa Common Area",
-        price: "Included in Villa Buyout",
-        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        price: "Included in Villa Stay",
+        image: "./img/villa-panoramic-pool-living.jpg"
       },
       {
         number: "06",
-        title: "Wellness & Spa Sanctuary",
-        tag: "Finnish Sauna • Turkish Hammam",
-        desc: "Dedicated rejuvenation sanctuary with panoramic glass sauna, cold plunge, heated marble hammam, and private massage treatment terrace overlooking the waves.",
+        title: "Modern Marble Spa Bath",
+        tag: "Rainfall Shower • Carrara Marble Tile",
+        desc: "Contemporary en-suite sanctuary clad in polished Carrara-style marble tile, equipped with matte black thermostatic rainfall shower fixtures and luxury amenities.",
         sqm: "85 m²",
-        capacity: "Private Wellness",
-        price: "Included in Villa Buyout",
-        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+        capacity: "Private En-suite",
+        price: "Included in Villa Stay",
+        image: "./img/villa-marble-bathroom.jpg"
       }
     ],
     about: {
       kicker: "About Casa Maria",
       title: "Where natural beauty meets architectural poetry.",
-      description: "Carved into the sun-drenched rocky coastline of Montenegro, Casa Maria was envisioned as a private seaside estate where architecture harmonizes with raw natural beauty. Featuring hand-hewn limestone, warm Mediterranean tones, and sweeping terraces overlooking the turquoise horizon.",
+      description: "Envisioned as a private seaside estate where architecture harmonizes with raw coastal tranquility. Featuring glowing evening pool courtyards, soaring timber ceilings, open glass living spaces, and direct steps to the Adriatic shoreline.",
+      image: "./img/villa-poolside-evening.jpg",
       stats: [
         { label: "Direct Beachfront", value: "85m" },
         { label: "Private Estate", value: "2,400 m²" },
@@ -167,66 +169,87 @@ export const villaContent = {
     galleryImages: [
       {
         id: 1,
-        title: "Oceanfront Infinity Edge",
-        category: "Pool & Deck",
-        span: "tall",
-        url: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=80"
+        title: "Grand Living Room & Pool Horizon",
+        category: "Living",
+        span: "wide",
+        url: "./img/villa-panoramic-pool-living.jpg"
       },
       {
         id: 2,
-        title: "Sunlit Coastal Living Salon",
-        category: "Living",
-        span: "normal",
-        url: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80"
+        title: "Master Suite & Timber Ceiling",
+        category: "Suites",
+        span: "tall",
+        url: "./img/villa-master-bedroom.jpg"
       },
       {
         id: 3,
-        title: "Master Bedroom Ocean Vista",
-        category: "Suites",
-        span: "normal",
-        url: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+        title: "Private Courtyard Pool at Night",
+        category: "Pool & Deck",
+        span: "tall",
+        url: "./img/villa-pool-night.jpg"
       },
       {
         id: 4,
-        title: "Sunset Terrace Alfresco Dining",
-        category: "Outdoor",
+        title: "Adriatic Beachfront Sunset",
+        category: "Beach",
         span: "wide",
-        url: "https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=1200&q=80"
+        url: "./img/villa-beach-sunset.jpg"
       },
       {
         id: 5,
-        title: "Private Beach Stone Path",
-        category: "Beach",
+        title: "Artisanal Dining & Lounge Area",
+        category: "Living",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-dining-living.jpg"
       },
       {
         id: 6,
-        title: "Travertine Master Bath Sanctuary",
-        category: "Suites",
+        title: "Illuminated Evening Pool Deck",
+        category: "Pool & Deck",
         span: "tall",
-        url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-poolside-evening.jpg"
       },
       {
         id: 7,
-        title: "Evening Amber Glow & Pool",
-        category: "Pool & Deck",
+        title: "Golden Shoreline Sunrise",
+        category: "Beach",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-beach-sunrise.jpg"
       },
       {
         id: 8,
-        title: "Chef's Gourmet Kitchen",
-        category: "Living",
+        title: "Multi-Color LED Courtyard Pool",
+        category: "Pool & Deck",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-pool-led-colors.jpg"
       },
       {
         id: 9,
-        title: "Secluded Shoreline Cabana",
-        category: "Beach",
+        title: "Modern Marble Rainfall Bath",
+        category: "Suites",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-marble-bathroom.jpg"
+      },
+      {
+        id: 10,
+        title: "Contemporary Media Lounge & Smart TV",
+        category: "Living",
+        span: "normal",
+        url: "./img/villa-living-sofa.jpg"
+      },
+      {
+        id: 11,
+        title: "Family Bunk Suite & Vanity",
+        category: "Suites",
+        span: "normal",
+        url: "./img/villa-bunk-suite.jpg"
+      },
+      {
+        id: 12,
+        title: "Master Bedroom Panoramic View",
+        category: "Suites",
+        span: "normal",
+        url: "./img/villa-bedroom-wide.jpg"
       }
     ],
     promises: {
@@ -317,6 +340,7 @@ export const villaContent = {
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       ctaPrimary: "Pete Reservationem",
       ctaSecondary: "Explora Spatia",
+      image: "./img/villa-panoramic-pool-living.jpg",
       highlights: [
         {
           title: "Ad Mare Directum",
@@ -346,7 +370,7 @@ export const villaContent = {
         sqm: "120 m²",
         capacity: "2 Hospites",
         price: "€1,200 / nocte",
-        image: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-master-bedroom.jpg"
       },
       {
         number: "02",
@@ -356,7 +380,7 @@ export const villaContent = {
         sqm: "95 m²",
         capacity: "2 Hospites",
         price: "€950 / nocte",
-        image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-pool-night.jpg"
       },
       {
         number: "03",
@@ -366,7 +390,7 @@ export const villaContent = {
         sqm: "140 m²",
         capacity: "2-4 Hospites",
         price: "€1,450 / nocte",
-        image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-beach-sunset.jpg"
       },
       {
         number: "04",
@@ -376,7 +400,7 @@ export const villaContent = {
         sqm: "110 m²",
         capacity: "2-3 Hospites",
         price: "€850 / nocte",
-        image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-bunk-suite.jpg"
       },
       {
         number: "05",
@@ -386,7 +410,7 @@ export const villaContent = {
         sqm: "180 m²",
         capacity: "Spatium Commune",
         price: "Inclusum in Tota Villa",
-        image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-panoramic-pool-living.jpg"
       },
       {
         number: "06",
@@ -396,13 +420,14 @@ export const villaContent = {
         sqm: "85 m²",
         capacity: "Salus Privata",
         price: "Inclusum in Tota Villa",
-        image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80"
+        image: "./img/villa-marble-bathroom.jpg"
       }
     ],
     about: {
       kicker: "De Casa Maria",
       title: "Fides aedificatur per singula minuta.",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      image: "./img/villa-poolside-evening.jpg",
       stats: [
         { label: "Litus Directum", value: "85m" },
         { label: "Villa Fundus", value: "2,400 m²" },
@@ -462,66 +487,87 @@ export const villaContent = {
     galleryImages: [
       {
         id: 1,
-        title: "Oceanfront Infinity Edge",
-        category: "Pool & Deck",
-        span: "tall",
-        url: "https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=900&q=80"
+        title: "Grand Living Room & Pool Horizon",
+        category: "Living",
+        span: "wide",
+        url: "./img/villa-panoramic-pool-living.jpg"
       },
       {
         id: 2,
-        title: "Sunlit Coastal Living Salon",
-        category: "Living",
-        span: "normal",
-        url: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=900&q=80"
+        title: "Master Suite & Timber Ceiling",
+        category: "Suites",
+        span: "tall",
+        url: "./img/villa-master-bedroom.jpg"
       },
       {
         id: 3,
-        title: "Master Bedroom Ocean Vista",
-        category: "Suites",
-        span: "normal",
-        url: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+        title: "Private Courtyard Pool at Night",
+        category: "Pool & Deck",
+        span: "tall",
+        url: "./img/villa-pool-night.jpg"
       },
       {
         id: 4,
-        title: "Sunset Terrace Alfresco Dining",
-        category: "Outdoor",
+        title: "Adriatic Beachfront Sunset",
+        category: "Beach",
         span: "wide",
-        url: "https://images.unsplash.com/photo-1512915922686-57c11dde9b6b?auto=format&fit=crop&w=1200&q=80"
+        url: "./img/villa-beach-sunset.jpg"
       },
       {
         id: 5,
-        title: "Private Beach Stone Path",
-        category: "Beach",
+        title: "Artisanal Dining & Lounge Area",
+        category: "Living",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-dining-living.jpg"
       },
       {
         id: 6,
-        title: "Travertine Master Bath Sanctuary",
-        category: "Suites",
+        title: "Illuminated Evening Pool Deck",
+        category: "Pool & Deck",
         span: "tall",
-        url: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-poolside-evening.jpg"
       },
       {
         id: 7,
-        title: "Evening Amber Glow & Pool",
-        category: "Pool & Deck",
+        title: "Golden Shoreline Sunrise",
+        category: "Beach",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-beach-sunrise.jpg"
       },
       {
         id: 8,
-        title: "Chef's Gourmet Kitchen",
-        category: "Living",
+        title: "Multi-Color LED Courtyard Pool",
+        category: "Pool & Deck",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-pool-led-colors.jpg"
       },
       {
         id: 9,
-        title: "Secluded Shoreline Cabana",
-        category: "Beach",
+        title: "Modern Marble Rainfall Bath",
+        category: "Suites",
         span: "normal",
-        url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=900&q=80"
+        url: "./img/villa-marble-bathroom.jpg"
+      },
+      {
+        id: 10,
+        title: "Contemporary Media Lounge & Smart TV",
+        category: "Living",
+        span: "normal",
+        url: "./img/villa-living-sofa.jpg"
+      },
+      {
+        id: 11,
+        title: "Family Bunk Suite & Vanity",
+        category: "Suites",
+        span: "normal",
+        url: "./img/villa-bunk-suite.jpg"
+      },
+      {
+        id: 12,
+        title: "Master Bedroom Panoramic View",
+        category: "Suites",
+        span: "normal",
+        url: "./img/villa-bedroom-wide.jpg"
       }
     ],
     promises: {

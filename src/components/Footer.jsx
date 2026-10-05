@@ -19,13 +19,20 @@ export default function Footer({ brand, navLinks, contact }) {
       <div className="w-[92%] max-w-[1240px] mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 pb-16 border-b border-white/10">
         {/* Brand Column */}
         <div className="lg:col-span-5">
-          <a href="#pocetna" className="inline-flex flex-col mb-6 leading-none">
-            <span className="font-serif text-3xl font-semibold text-white tracking-wide">
-              {brand.name}
-            </span>
-            <span className="text-[9px] font-semibold tracking-[0.35em] uppercase text-[#D7C7AE] mt-1.5">
-              {brand.subtitle}
-            </span>
+          <a href="#pocetna" className="inline-flex items-center gap-3.5 mb-6 leading-none">
+            <img
+              src="./img/Logo.jpg"
+              alt="Casa Maria Logo"
+              className="w-12 h-12 rounded-full object-cover border border-[#D7C7AE]/50 shadow-md shrink-0"
+            />
+            <div className="flex flex-col">
+              <span className="font-serif text-3xl font-semibold text-white tracking-wide">
+                {brand.name}
+              </span>
+              <span className="text-[9px] font-semibold tracking-[0.35em] uppercase text-[#D7C7AE] mt-1.5">
+                {brand.subtitle}
+              </span>
+            </div>
           </a>
           <p className="text-sm text-white/70 leading-relaxed font-light max-w-sm">
             An extraordinary beachfront sanctuary curated on the Adriatic coastline. Designed for those who value privacy, bespoke hospitality, and effortless oceanfront living.

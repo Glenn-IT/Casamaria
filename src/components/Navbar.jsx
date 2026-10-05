@@ -28,21 +28,28 @@ export default function Navbar({ navLinks, brand, contentMode, onToggleMode, onO
     >
       <div className="w-[92%] max-w-[1240px] mx-auto flex items-center justify-between gap-6">
         {/* Brand Logo */}
-        <a href="#pocetna" className="flex flex-col group leading-none">
-          <span
-            className={`font-serif text-2xl md:text-3xl font-semibold tracking-wide transition-colors ${
-              scrolled ? 'text-[#2F3A33]' : 'text-white'
-            }`}
-          >
-            {brand.name}
-          </span>
-          <span
-            className={`text-[8px] md:text-[9px] font-semibold tracking-[0.3em] uppercase mt-1 transition-colors ${
-              scrolled ? 'text-[#586B5A]' : 'text-[#D7C7AE]'
-            }`}
-          >
-            {brand.subtitle}
-          </span>
+        <a href="#pocetna" className="flex items-center gap-3 md:gap-3.5 group leading-none">
+          <img
+            src="./img/Logo.jpg"
+            alt="Casa Maria Logo"
+            className="w-10 h-10 md:w-11 md:h-11 rounded-full object-cover border border-[#D7C7AE]/60 shadow-sm shrink-0"
+          />
+          <div className="flex flex-col">
+            <span
+              className={`font-serif text-2xl md:text-3xl font-semibold tracking-wide transition-colors ${
+                scrolled ? 'text-[#2F3A33]' : 'text-white'
+              }`}
+            >
+              {brand.name}
+            </span>
+            <span
+              className={`text-[8px] md:text-[9px] font-semibold tracking-[0.3em] uppercase mt-1 transition-colors ${
+                scrolled ? 'text-[#586B5A]' : 'text-[#D7C7AE]'
+              }`}
+            >
+              {brand.subtitle}
+            </span>
+          </div>
         </a>
 
         {/* Desktop Navigation */}
