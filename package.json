@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "package": "npm run build && powershell -Command \"Compress-Archive -Path dist/*, dist/.htaccess -DestinationPath deploy.zip -Force\""
   },
   "dependencies": {
     "lucide-react": "^1.16.0",
