@@ -18,13 +18,12 @@ import { villaContent } from './data/villaData';
 
 export default function App() {
   const [loading, setLoading] = useState(true);
-  const [contentMode, setContentMode] = useState('villa'); // 'villa' or 'lorem'
   const [selectedSuite, setSelectedSuite] = useState(null);
   const [lightboxImage, setLightboxImage] = useState(null);
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
   const [bookingPreselectedSuite, setBookingPreselectedSuite] = useState(null);
 
-  const activeData = villaContent[contentMode];
+  const activeData = villaContent.villa;
 
   const handleOpenBooking = (suite = null) => {
     setBookingPreselectedSuite(suite);
@@ -45,8 +44,6 @@ export default function App() {
       <Navbar
         navLinks={activeData.nav}
         brand={activeData.brand}
-        contentMode={contentMode}
-        onToggleMode={(mode) => setContentMode(mode)}
         onOpenBooking={() => handleOpenBooking(null)}
       />
 

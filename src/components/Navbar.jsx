@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Globe, Sparkles } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
-export default function Navbar({ navLinks, brand, contentMode, onToggleMode, onOpenBooking }) {
+export default function Navbar({ navLinks, brand, onOpenBooking }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -76,48 +76,16 @@ export default function Navbar({ navLinks, brand, contentMode, onToggleMode, onO
 
         {/* Header Right Actions */}
         <div className="flex items-center gap-3 md:gap-5">
-          {/* Mode Switcher (Luxury / Lorem Ipsum) */}
-          <div
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all ${
-              scrolled
-                ? 'border-[#586B5A]/30 text-[#2F3A33] bg-white/50'
-                : 'border-white/30 text-white bg-black/20 backdrop-blur-sm'
-            }`}
-          >
-            <Sparkles className="w-3.5 h-3.5 text-[#C5A880]" />
-            <button
-              onClick={() => onToggleMode('villa')}
-              className={`px-1.5 py-0.5 rounded text-[11px] font-semibold transition-all ${
-                contentMode === 'villa'
-                  ? 'text-[#2F3A33] bg-[#D7C7AE]'
-                  : 'opacity-60 hover:opacity-100'
-              }`}
-            >
-              Villa
-            </button>
-            <span className="opacity-40">/</span>
-            <button
-              onClick={() => onToggleMode('lorem')}
-              className={`px-1.5 py-0.5 rounded text-[11px] font-semibold transition-all ${
-                contentMode === 'lorem'
-                  ? 'text-[#2F3A33] bg-[#D7C7AE]'
-                  : 'opacity-60 hover:opacity-100'
-              }`}
-            >
-              Lorem
-            </button>
-          </div>
-
           {/* Book / Request Quote CTA Button */}
           <button
             onClick={onOpenBooking}
-            className={`hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
+            className={`hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
               scrolled
                 ? 'border border-[#2F3A33] text-[#2F3A33] hover:bg-[#2F3A33] hover:text-white'
                 : 'bg-white text-[#2F3A33] hover:bg-[#D7C7AE] hover:text-[#1B241E] shadow-lg'
             }`}
           >
-            {contentMode === 'villa' ? 'Book Your Stay' : 'Pete Reservationem'}
+            Book Your Stay
           </button>
 
           {/* Mobile Menu Toggle Button */}
@@ -155,7 +123,7 @@ export default function Navbar({ navLinks, brand, contentMode, onToggleMode, onO
                 }}
                 className="w-full py-3 bg-[#2F3A33] text-white rounded-full text-xs font-semibold uppercase tracking-wider text-center"
               >
-                {contentMode === 'villa' ? 'Book Your Stay' : 'Pete Reservationem'}
+                Book Your Stay
               </button>
             </div>
           </div>
