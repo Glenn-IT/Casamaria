@@ -9,6 +9,12 @@ const InstagramIcon = ({ className = "w-3.5 h-3.5" }) => (
   </svg>
 );
 
+const FacebookIcon = ({ className = "w-3.5 h-3.5" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  </svg>
+);
+
 export default function Footer({ brand, navLinks, contact }) {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -97,9 +103,22 @@ export default function Footer({ brand, navLinks, contact }) {
             Connect
           </h4>
           <ul className="space-y-3 text-xs tracking-wider uppercase font-medium">
+            {contact.facebook && (
+              <li>
+                <a
+                  href={contact.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
+                >
+                  <FacebookIcon className="w-3.5 h-3.5 text-[#D7C7AE]" />
+                  <span>Facebook</span>
+                </a>
+              </li>
+            )}
             <li>
               <a
-                href="https://www.instagram.com"
+                href={contact.instagramLink || "https://www.instagram.com/casamariabeachvilla"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
@@ -110,7 +129,7 @@ export default function Footer({ brand, navLinks, contact }) {
             </li>
             <li>
               <a
-                href={`https://wa.me/${contact.whatsapp.replace(/[^0-9]/g, '')}`}
+                href={contact.whatsappLink || `https://wa.me/${(contact.whatsappNumber || contact.whatsapp).replace(/[^0-9]/g, '')}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
@@ -121,11 +140,11 @@ export default function Footer({ brand, navLinks, contact }) {
             </li>
             <li>
               <a
-                href={`viber://chat?number=${encodeURIComponent(contact.whatsapp)}`}
+                href={`tel:${(contact.phoneRaw || contact.phone).replace(/\s+/g, '')}`}
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
               >
                 <Phone className="w-3.5 h-3.5 text-[#D7C7AE]" />
-                <span>Viber</span>
+                <span>Direct Call</span>
               </a>
             </li>
           </ul>
@@ -134,7 +153,7 @@ export default function Footer({ brand, navLinks, contact }) {
 
       {/* Footer Bottom matching casamaria footer-bottom */}
       <div className="w-[92%] max-w-[1240px] mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
-        <p>© 2026 Casa Maria Beachfront Villa. All rights reserved.</p>
+        <p>© 2026 Casa Maria Beachfront Villa (<a href="https://casamariaph.com" className="hover:text-white underline underline-offset-2">casamariaph.com</a>). All rights reserved.</p>
 
         <p className="flex items-center gap-1.5">
           <span>Developed by</span>

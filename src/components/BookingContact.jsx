@@ -9,6 +9,12 @@ const InstagramIcon = ({ className = "w-4 h-4" }) => (
   </svg>
 );
 
+const FacebookIcon = ({ className = "w-4 h-4" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  </svg>
+);
+
 export default function BookingContact({ data, onOpenBookingModal }) {
   const [formData, setFormData] = useState({
     name: '',
@@ -62,10 +68,11 @@ export default function BookingContact({ data, onOpenBookingModal }) {
             </div>
           </div>
 
-          {/* Quick Contact Items matching original casamaria.online contact-card */}
-          <div className="bg-white rounded-[22px] p-6 shadow-sm border border-[#2F3A33]/5 space-y-4">
+          {/* Quick Contact Items */}
+          <div className="bg-white rounded-[22px] p-6 shadow-sm border border-[#2F3A33]/5 space-y-3.5">
+            {/* Direct Telephone */}
             <a
-              href={`tel:${data.phone.replace(/\s+/g, '')}`}
+              href={`tel:${(data.phoneRaw || data.phone).replace(/\s+/g, '')}`}
               className="flex items-center gap-4 p-3 rounded-xl hover:bg-[#F7F5F2] transition-colors group"
             >
               <div className="w-10 h-10 rounded-full bg-[#EFECE6] text-[#2F3A33] flex items-center justify-center shrink-0 group-hover:bg-[#2F3A33] group-hover:text-white transition-colors">
@@ -73,7 +80,7 @@ export default function BookingContact({ data, onOpenBookingModal }) {
               </div>
               <div>
                 <small className="block text-[11px] uppercase tracking-wider text-[#586B5A] font-medium">
-                  Direct Telephone
+                  Direct Telephone / Mobile
                 </small>
                 <strong className="text-sm text-[#2F3A33] font-serif font-semibold">
                   {data.phone}
@@ -81,8 +88,9 @@ export default function BookingContact({ data, onOpenBookingModal }) {
               </div>
             </a>
 
+            {/* WhatsApp Concierge */}
             <a
-              href={`https://wa.me/${data.whatsapp.replace(/[^0-9]/g, '')}`}
+              href={data.whatsappLink || `https://wa.me/${(data.whatsappNumber || data.whatsapp).replace(/[^0-9]/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 p-3 rounded-xl hover:bg-[#F7F5F2] transition-colors group"
@@ -90,16 +98,76 @@ export default function BookingContact({ data, onOpenBookingModal }) {
               <div className="w-10 h-10 rounded-full bg-[#EFECE6] text-[#2F3A33] flex items-center justify-center shrink-0 group-hover:bg-[#2F3A33] group-hover:text-white transition-colors">
                 <MessageCircle className="w-4 h-4" />
               </div>
-              <div>
-                <small className="block text-[11px] uppercase tracking-wider text-[#586B5A] font-medium">
-                  WhatsApp Concierge
-                </small>
+              <div className="flex-1">
+                <div className="flex items-center justify-between">
+                  <small className="block text-[11px] uppercase tracking-wider text-[#586B5A] font-medium">
+                    WhatsApp Concierge
+                  </small>
+                  <span className="text-[10px] uppercase font-semibold text-[#586B5A] tracking-wider group-hover:text-[#2F3A33] flex items-center gap-1 transition-colors">
+                    Chat ↗
+                  </span>
+                </div>
                 <strong className="text-sm text-[#2F3A33] font-serif font-semibold">
                   {data.whatsapp}
                 </strong>
               </div>
             </a>
 
+            {/* Facebook Page */}
+            {data.facebook && (
+              <a
+                href={data.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-3 rounded-xl hover:bg-[#F7F5F2] transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-full bg-[#EFECE6] text-[#2F3A33] flex items-center justify-center shrink-0 group-hover:bg-[#2F3A33] group-hover:text-white transition-colors">
+                  <FacebookIcon className="w-4 h-4" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <small className="block text-[11px] uppercase tracking-wider text-[#586B5A] font-medium">
+                      Official Facebook
+                    </small>
+                    <span className="text-[10px] uppercase font-semibold text-[#586B5A] tracking-wider group-hover:text-[#2F3A33] flex items-center gap-1 transition-colors">
+                      Visit ↗
+                    </span>
+                  </div>
+                  <strong className="text-sm text-[#2F3A33] font-serif font-semibold">
+                    fb.com/{data.facebookHandle || 'casamariaph'}
+                  </strong>
+                </div>
+              </a>
+            )}
+
+            {/* Instagram Profile */}
+            {(data.instagramLink || data.instagram) && (
+              <a
+                href={data.instagramLink || "https://www.instagram.com/casamariabeachvilla"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-3 rounded-xl hover:bg-[#F7F5F2] transition-colors group"
+              >
+                <div className="w-10 h-10 rounded-full bg-[#EFECE6] text-[#2F3A33] flex items-center justify-center shrink-0 group-hover:bg-[#2F3A33] group-hover:text-white transition-colors">
+                  <InstagramIcon className="w-4 h-4" />
+                </div>
+                <div className="flex-1">
+                  <div className="flex items-center justify-between">
+                    <small className="block text-[11px] uppercase tracking-wider text-[#586B5A] font-medium">
+                      Instagram
+                    </small>
+                    <span className="text-[10px] uppercase font-semibold text-[#586B5A] tracking-wider group-hover:text-[#2F3A33] flex items-center gap-1 transition-colors">
+                      Follow ↗
+                    </span>
+                  </div>
+                  <strong className="text-sm text-[#2F3A33] font-serif font-semibold">
+                    {data.instagram}
+                  </strong>
+                </div>
+              </a>
+            )}
+
+            {/* Official Email */}
             <a
               href={`mailto:${data.email}`}
               className="flex items-center gap-4 p-3 rounded-xl hover:bg-[#F7F5F2] transition-colors group"

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://casamariaph.com/</loc>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://casamariaph.com/img/villa-panoramic-pool-living.jpg</image:loc>
+      <image:title>Casa Maria Beachfront Villa Panoramic Living and Pool</image:title>
+      <image:caption>Casa Maria Beach Villa in Amunitan, Gonzaga, Cagayan, Philippines</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://casamariaph.com/img/villa-master-bedroom.jpg</image:loc>
+      <image:title>Casa Maria Shoreline Master Suite</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://casamariaph.com/img/villa-pool-night.jpg</image:loc>
+      <image:title>Casa Maria Private Pool Courtyard</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://casamariaph.com/img/villa-beach-sunset.jpg</image:loc>
+      <image:title>Casa Maria Amunitan Beach Sunset</image:title>
+    </image:image>
+  </url>
+</urlset>
