@@ -35,7 +35,7 @@ export default function Footer({ brand, navLinks, contact }) {
             </div>
           </a>
           <p className="text-sm text-white/70 leading-relaxed font-light max-w-sm">
-            An extraordinary beachfront sanctuary curated on the Adriatic coastline. Designed for those who value privacy, bespoke hospitality, and effortless oceanfront living.
+            An extraordinary beachfront sanctuary in Amunitan, Gonzaga, Cagayan. Designed for those who value privacy, bespoke hospitality, and effortless seaside living.
           </p>
         </div>
 
@@ -76,9 +76,17 @@ export default function Footer({ brand, navLinks, contact }) {
                 {contact.email}
               </a>
             </li>
-            <li className="flex items-center gap-2.5">
-              <MapPin className="w-3.5 h-3.5 text-[#D7C7AE]" />
-              <span>{contact.location}</span>
+            <li className="flex items-start gap-2.5">
+              <MapPin className="w-3.5 h-3.5 text-[#D7C7AE] shrink-0 mt-0.5" />
+              <a
+                href={contact.googleMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(contact.location)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-white transition-colors"
+                title="Open in Google Maps"
+              >
+                {contact.location}
+              </a>
             </li>
           </ul>
         </div>

@@ -3,8 +3,10 @@ export const villaContent = {
     brand: {
       name: "Casa Maria",
       subtitle: "BEACHFRONT VILLA",
-      tagline: "Exclusive Private Sanctuary on the Adriatic Shoreline",
-      location: "Budva Riviera, Adriatic Coast"
+      tagline: "Exclusive Private Sanctuary on the Amunitan Shoreline",
+      location: "83J6+75M Amunitan, Gonzaga, Cagayan",
+      mapPin: "83J6+75M Amunitan, Gonzaga, Cagayan",
+      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=83J6%2B75M+Amunitan%2C+Gonzaga%2C+Cagayan"
     },
     nav: [
       { id: "pocetna", label: "Home" },
@@ -16,10 +18,10 @@ export const villaContent = {
       { id: "kontakt", label: "Contact" },
     ],
     hero: {
-      eyebrow: "EXCLUSIVE SEASIDE RESIDENCE • ADRIATIC COAST",
+      eyebrow: "EXCLUSIVE BEACHFRONT RESIDENCE • GONZAGA, CAGAYAN",
       titleMain: "Where Azure Sea",
       titleSub: "Meets Serene Luxury.",
-      description: "Nestled along the pristine Adriatic shoreline, Casa Maria offers an intimate beachfront sanctuary. Immerse yourself in panoramic ocean vistas, private infinity pools, and bespoke luxury hospitality tailored to your rhythm.",
+      description: "Nestled along the pristine shoreline of Amunitan in Gonzaga, Cagayan, Casa Maria offers an intimate beachfront sanctuary. Immerse yourself in panoramic ocean vistas, private infinity pools, and bespoke luxury hospitality tailored to your rhythm.",
       ctaPrimary: "Reserve Your Stay",
       ctaSecondary: "Explore Spaces",
       image: "./img/villa-panoramic-pool-living.jpg",
@@ -66,9 +68,9 @@ export const villaContent = {
       },
       {
         number: "03",
-        title: "Adriatic Shoreline Haven",
+        title: "Amunitan Shoreline Haven",
         tag: "Direct Beach Access • Golden Sunsets",
-        desc: "Unrivaled direct access to the secluded sandy beach, where gentle waves meet golden hour skies and tranquil evening sea breezes.",
+        desc: "Unrivaled direct access to the secluded sandy beach of Amunitan, where gentle ocean waves meet golden hour skies and tranquil evening sea breezes.",
         sqm: "Shoreline Access",
         capacity: "Beachfront",
         price: "Direct Access",
@@ -108,7 +110,7 @@ export const villaContent = {
     about: {
       kicker: "About Casa Maria",
       title: "Where natural beauty meets architectural poetry.",
-      description: "Envisioned as a private seaside estate where architecture harmonizes with raw coastal tranquility. Featuring glowing evening pool courtyards, soaring timber ceilings, open glass living spaces, and direct steps to the Adriatic shoreline.",
+      description: "Envisioned as a private seaside estate where architecture harmonizes with raw coastal tranquility. Featuring glowing evening pool courtyards, soaring timber ceilings, open glass living spaces, and direct steps to the Amunitan shoreline.",
       image: "./img/villa-poolside-evening.jpg",
       stats: [
         { label: "Direct Beachfront", value: "85m" },
@@ -190,7 +192,7 @@ export const villaContent = {
       },
       {
         id: 4,
-        title: "Adriatic Beachfront Sunset",
+        title: "Amunitan Beachfront Sunset",
         category: "Beach",
         span: "wide",
         url: "./img/villa-beach-sunset.jpg"
@@ -289,8 +291,8 @@ export const villaContent = {
           a: "Yes. Villa reservations include a daily gourmet Mediterranean breakfast prepared fresh by our resident chef, daily afternoon aperitivo, and full access to our private chef for lunch and dinner banquets."
         },
         {
-          q: "How do we arrange airport transfers or yacht charters?",
-          a: "Our private concierge coordinates luxury Mercedes V-Class airport transfers from Tivat (TIV) or Podgorica (TGD), as well as direct private yacht transfers and daily coastal boat excursions."
+          q: "How do we arrange airport transfers or coastal excursions?",
+          a: "Our private concierge coordinates comfortable transfers from Tuguegarao Airport (TUG) or Cagayan North International Airport (LLC), as well as direct boat excursions around Gonzaga and Palaui Island."
         },
         {
           q: "Is the villa fully private for our group during our stay?",
@@ -312,7 +314,9 @@ export const villaContent = {
       whatsapp: "+49 1573 9498300",
       email: "reservations@casamaria-villa.online",
       instagram: "@casamaria.villa",
-      location: "Adriatic Coastal Promenade, Montenegro"
+      location: "83J6+75M Amunitan, Gonzaga, Cagayan",
+      mapPin: "83J6+75M Amunitan, Gonzaga, Cagayan",
+      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=83J6%2B75M+Amunitan%2C+Gonzaga%2C+Cagayan"
     }
   },
 
@@ -508,7 +512,7 @@ export const villaContent = {
       },
       {
         id: 4,
-        title: "Adriatic Beachfront Sunset",
+        title: "Amunitan Beachfront Sunset",
         category: "Beach",
         span: "wide",
         url: "./img/villa-beach-sunset.jpg"
@@ -630,7 +634,8 @@ export const villaContent = {
       whatsapp: "+49 1573 9498300",
       email: "reservations@casamaria-villa.online",
       instagram: "@casamaria.villa",
-      location: "Litus Adriaticum, Budva Riviera"
+      location: "83J6+75M Amunitan, Gonzaga, Cagayan",
+      googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=83J6%2B75M+Amunitan%2C+Gonzaga%2C+Cagayan"
     }
   }
 };

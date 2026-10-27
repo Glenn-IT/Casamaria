@@ -13,7 +13,7 @@ export default function SuiteModal({ suite, onClose, onBookSuite }) {
   if (!suite) return null;
 
   const features = [
-    "180° Panoramic Adriatic Sea View",
+    "180° Panoramic Ocean & Shoreline View",
     "Private cantilevered terrace & outdoor sun loungers",
     "Italian marble bathroom with rain shower & soaking tub",
     "Complimentary daily gourmet breakfast prepared by private chef",

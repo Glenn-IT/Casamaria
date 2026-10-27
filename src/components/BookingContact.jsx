@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Phone, MessageCircle, Mail, MapPin, Calendar, Users, Send, CheckCircle2 } from 'lucide-react';
+import { Phone, MessageCircle, Mail, MapPin, Calendar, Users, Send, CheckCircle2, ExternalLink } from 'lucide-react';
 
 const InstagramIcon = ({ className = "w-4 h-4" }) => (
   <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -117,17 +117,59 @@ export default function BookingContact({ data, onOpenBookingModal }) {
               </div>
             </a>
 
-            <div className="flex items-center gap-4 p-3 rounded-xl">
-              <div className="w-10 h-10 rounded-full bg-[#EFECE6] text-[#2F3A33] flex items-center justify-center shrink-0">
+            <a
+              href={data.googleMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(data.location)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-4 p-3 rounded-xl hover:bg-[#F7F5F2] transition-colors group"
+            >
+              <div className="w-10 h-10 rounded-full bg-[#EFECE6] text-[#2F3A33] flex items-center justify-center shrink-0 group-hover:bg-[#2F3A33] group-hover:text-white transition-colors mt-0.5">
                 <MapPin className="w-4 h-4" />
               </div>
-              <div>
-                <small className="block text-[11px] uppercase tracking-wider text-[#586B5A] font-medium">
-                  Villa Location
-                </small>
-                <strong className="text-sm text-[#2F3A33] font-serif font-semibold">
+              <div className="flex-1">
+                <div className="flex items-center justify-between">
+                  <small className="block text-[11px] uppercase tracking-wider text-[#586B5A] font-medium">
+                    Map Pin Location
+                  </small>
+                  <span className="text-[10px] uppercase font-semibold text-[#586B5A] tracking-wider group-hover:text-[#2F3A33] flex items-center gap-1 transition-colors">
+                    <span>Open Map</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </span>
+                </div>
+                <strong className="text-sm text-[#2F3A33] font-serif font-semibold block mt-0.5">
                   {data.location}
                 </strong>
+                <span className="inline-block mt-1 text-[11px] text-[#586B5A] bg-[#EFECE6]/60 px-2 py-0.5 rounded font-mono">
+                  Plus Code: 83J6+75M Amunitan
+                </span>
+              </div>
+            </a>
+
+            {/* Embedded Google Map Preview */}
+            <div className="pt-3 border-t border-[#2F3A33]/10">
+              <div className="relative rounded-2xl overflow-hidden border border-[#2F3A33]/10 shadow-sm bg-[#EFECE6]/40">
+                <iframe
+                  title="Casa Maria Villa Map Location"
+                  src={`https://maps.google.com/maps?q=${encodeURIComponent(data.location)}&t=&z=15&ie=UTF8&iwloc=&output=embed`}
+                  className="w-full h-44 border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
+                <div className="p-2.5 bg-white/95 backdrop-blur-sm border-t border-[#2F3A33]/5 flex items-center justify-between">
+                  <span className="text-[11px] text-[#2F3A33] font-medium flex items-center gap-1.5">
+                    <MapPin className="w-3.5 h-3.5 text-[#586B5A]" />
+                    Amunitan, Gonzaga, Cagayan
+                  </span>
+                  <a
+                    href={data.googleMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(data.location)}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#586B5A] hover:text-[#2F3A33] transition-colors"
+                  >
+                    <span>View Larger Map</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
