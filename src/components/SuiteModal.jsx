@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { X, Check, Maximize2, Users, Bed, Sparkles, ArrowRight } from 'lucide-react';
+import { X, Check, Users, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function SuiteModal({ suite, onClose }) {
   useEffect(() => {
@@ -55,18 +55,15 @@ export default function SuiteModal({ suite, onClose }) {
         {/* Modal Body */}
         <div className="p-6 sm:p-8">
           {/* Quick Specs */}
-          <div className="grid grid-cols-3 gap-3 p-4 rounded-xl bg-white border border-[#2F3A33]/5 mb-6 text-center">
-            <div>
-              <span className="block text-[11px] text-[#586B5A] uppercase tracking-wider">Area</span>
-              <strong className="block text-sm sm:text-base font-serif text-[#2F3A33]">{suite.sqm}</strong>
-            </div>
-            <div>
-              <span className="block text-[11px] text-[#586B5A] uppercase tracking-wider">Guests</span>
+          <div className="flex items-center justify-between p-4 rounded-xl bg-white border border-[#2F3A33]/5 mb-6 text-center">
+            <div className="flex-1">
+              <span className="block text-[11px] text-[#586B5A] uppercase tracking-wider">Capacity</span>
               <strong className="block text-sm sm:text-base font-serif text-[#2F3A33]">{suite.capacity}</strong>
             </div>
-            <div>
-              <span className="block text-[11px] text-[#586B5A] uppercase tracking-wider">Rate</span>
-              <strong className="block text-sm sm:text-base font-serif text-[#586B5A] font-bold">{suite.price}</strong>
+            <div className="w-[1px] h-8 bg-[#2F3A33]/10" />
+            <div className="flex-1">
+              <span className="block text-[11px] text-[#586B5A] uppercase tracking-wider">Inquiries & Rates</span>
+              <strong className="block text-sm sm:text-base font-serif text-[#586B5A]">Direct Inquiry</strong>
             </div>
           </div>
 

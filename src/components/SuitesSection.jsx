@@ -1,5 +1,5 @@
 import React from 'react';
-import { Maximize2, Users, ArrowRight } from 'lucide-react';
+import { Users, ArrowRight } from 'lucide-react';
 
 export default function SuitesSection({ headerData, suites, onSelectSuite }) {
   return (
@@ -56,18 +56,12 @@ export default function SuitesSection({ headerData, suites, onSelectSuite }) {
 
               {/* Card Meta & Action Footer */}
               <div className="pt-4 border-t border-[#2F3A33]/10 flex items-center justify-between text-xs text-[#2F3A33]">
-                <div className="flex items-center gap-3">
-                  <span className="flex items-center gap-1 text-[#586B5A]">
-                    <Maximize2 className="w-3.5 h-3.5" />
-                    <span>{suite.sqm}</span>
-                  </span>
-                  <span className="flex items-center gap-1 text-[#586B5A]">
-                    <Users className="w-3.5 h-3.5" />
-                    <span>{suite.capacity}</span>
-                  </span>
+                <div className="flex items-center gap-1.5 text-[#586B5A]">
+                  <Users className="w-3.5 h-3.5" />
+                  <span>{suite.capacity}</span>
                 </div>
-                <div className="flex items-center gap-1 text-[#2F3A33] font-semibold group-hover:translate-x-1 transition-transform">
-                  <span>{suite.price}</span>
+                <div className="flex items-center gap-1 text-[#2F3A33] font-medium group-hover:text-[#586B5A] group-hover:translate-x-1 transition-all">
+                  <span>View Details</span>
                   <ArrowRight className="w-3.5 h-3.5 text-[#586B5A]" />
                 </div>
               </div>
