@@ -15,30 +15,23 @@ const FacebookIcon = ({ className = "w-4 h-4" }) => (
   </svg>
 );
 
-export default function BookingContact({ data, onOpenBookingModal }) {
+export default function BookingContact({ data }) {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    checkIn: '',
-    checkOut: '',
-    guests: '2',
-    suite: 'Master Shoreline Suite',
-    specialRequests: ''
+    message: ''
   });
 
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!formData.name || !formData.email) {
-      alert('Please fill in your name and email.');
+    if (!formData.name || (!formData.email && !formData.phone)) {
+      alert('Please fill in your name and at least an email or phone number.');
       return;
     }
     setSubmitted(true);
-    if (onOpenBookingModal) {
-      onOpenBookingModal(formData);
-    }
   };
 
   return (
@@ -243,17 +236,17 @@ export default function BookingContact({ data, onOpenBookingModal }) {
           </div>
         </div>
 
-        {/* Right Column: Interactive Reservation Booking Form */}
+        {/* Right Column: General Inquiry Form */}
         <div className="lg:col-span-7 bg-white rounded-[26px] p-8 sm:p-10 shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-[#2F3A33]/5">
           <div className="mb-8">
             <span className="text-[10px] font-bold tracking-[0.25em] text-[#586B5A] uppercase bg-[#EFECE6] px-3 py-1 rounded-full">
-              Direct Reservation Desk
+              Direct Inquiry Desk
             </span>
             <h3 className="text-2xl sm:text-3xl font-serif text-[#2F3A33] mt-3">
-              Request Your Villa Dates
+              Get in Touch with Casa Maria
             </h3>
             <p className="text-xs sm:text-sm text-[#2D2D2D]/70 font-light mt-1">
-              Guaranteed lowest rates, priority concierge curation, and bespoke check-in.
+              Reach out directly for rates, staycation details, special requests, or custom arrangements.
             </p>
           </div>
 
@@ -264,14 +257,14 @@ export default function BookingContact({ data, onOpenBookingModal }) {
                 Inquiry Received
               </h4>
               <p className="text-sm text-[#2D2D2D]/75 max-w-md font-light mb-6">
-                Thank you, {formData.name}. Our resident villa director is reviewing your dates and will connect with your bespoke itinerary within 4 hours.
+                Thank you, {formData.name}. We have received your message and will get back to you promptly via your provided contact details.
               </p>
               <button
                 type="button"
                 onClick={() => setSubmitted(false)}
                 className="px-6 py-2.5 bg-[#2F3A33] text-white rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-[#586B5A] transition-colors"
               >
-                Submit Another Request
+                Send Another Message
               </button>
             </div>
           ) : (
@@ -279,78 +272,11 @@ export default function BookingContact({ data, onOpenBookingModal }) {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label className="block text-xs font-semibold text-[#2F3A33] uppercase tracking-wider mb-2">
-                    Check-in Date
-                  </label>
-                  <div className="relative">
-                    <input
-                      type="date"
-                      value={formData.checkIn}
-                      onChange={(e) => setFormData({ ...formData, checkIn: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
-                      required
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-[#2F3A33] uppercase tracking-wider mb-2">
-                    Check-out Date
-                  </label>
-                  <div className="relative">
-                    <input
-                      type="date"
-                      value={formData.checkOut}
-                      onChange={(e) => setFormData({ ...formData, checkOut: e.target.value })}
-                      className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
-                      required
-                    />
-                  </div>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-xs font-semibold text-[#2F3A33] uppercase tracking-wider mb-2">
-                    Number of Guests
-                  </label>
-                  <select
-                    value={formData.guests}
-                    onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
-                  >
-                    <option value="1-2">1 - 2 Guests (Single Suite)</option>
-                    <option value="3-4">3 - 4 Guests (Double Suite)</option>
-                    <option value="5-8">5 - 8 Guests (Multi Suite)</option>
-                    <option value="9-12">9 - 12 Guests (Full Villa Buyout)</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-xs font-semibold text-[#2F3A33] uppercase tracking-wider mb-2">
-                    Suite Preference
-                  </label>
-                  <select
-                    value={formData.suite}
-                    onChange={(e) => setFormData({ ...formData, suite: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
-                  >
-                    <option value="Entire Villa Buyout">Entire Villa Buyout (Private Estate)</option>
-                    <option value="The Master Shoreline Suite">The Master Shoreline Suite</option>
-                    <option value="Sunset Infinity Pavilion">Sunset Infinity Pavilion</option>
-                    <option value="Azure Horizon Penthouse">Azure Horizon Penthouse</option>
-                    <option value="The Mediterranean Garden Villa">The Mediterranean Garden Villa</option>
-                  </select>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label className="block text-xs font-semibold text-[#2F3A33] uppercase tracking-wider mb-2">
                     Your Full Name
                   </label>
                   <input
                     type="text"
-                    placeholder="e.g. Lorde Harrington"
+                    placeholder="e.g. Maria Santos"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
@@ -368,21 +294,34 @@ export default function BookingContact({ data, onOpenBookingModal }) {
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
-                    required
                   />
                 </div>
               </div>
 
               <div>
                 <label className="block text-xs font-semibold text-[#2F3A33] uppercase tracking-wider mb-2">
-                  Special Requests (Airport Transfer, Private Chef, Yacht)
+                  Contact / Mobile Number
+                </label>
+                <input
+                  type="tel"
+                  placeholder="0912 345 6789"
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-semibold text-[#2F3A33] uppercase tracking-wider mb-2">
+                  Your Message or Inquiry
                 </label>
                 <textarea
-                  rows="3"
-                  placeholder="Tell us about special dietary preferences, yacht charter requests, or celebrations..."
-                  value={formData.specialRequests}
-                  onChange={(e) => setFormData({ ...formData, specialRequests: e.target.value })}
+                  rows="4"
+                  placeholder="Let us know your questions, preferred stay dates, or any special requests..."
+                  value={formData.message}
+                  onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl border border-[#2F3A33]/15 text-sm text-[#2F3A33] focus:outline-none focus:border-[#586B5A] bg-[#F7F5F2]/40"
+                  required
                 ></textarea>
               </div>
 
@@ -390,7 +329,7 @@ export default function BookingContact({ data, onOpenBookingModal }) {
                 type="submit"
                 className="w-full py-4 rounded-full bg-[#2F3A33] text-white hover:bg-[#586B5A] font-semibold text-xs uppercase tracking-widest transition-all duration-300 shadow-[0_15px_30px_rgba(47,58,51,0.2)] flex items-center justify-center gap-2"
               >
-                <span>Submit Reservation Request</span>
+                <span>Send Message</span>
                 <Send className="w-4 h-4" />
               </button>
             </form>

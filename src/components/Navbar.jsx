@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 
-export default function Navbar({ navLinks, brand, onOpenBooking }) {
+export default function Navbar({ navLinks, brand }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -30,7 +30,7 @@ export default function Navbar({ navLinks, brand, onOpenBooking }) {
         {/* Brand Logo */}
         <a href="#pocetna" className="flex items-center gap-3 md:gap-3.5 group leading-none">
           <img
-            src="./img/Logo.jpg"
+            src="./img/Logo.png"
             alt="Casa Maria Logo"
             className="w-10 h-10 md:w-11 md:h-11 rounded-full object-cover border border-[#D7C7AE]/60 shadow-sm shrink-0"
           />
@@ -76,17 +76,16 @@ export default function Navbar({ navLinks, brand, onOpenBooking }) {
 
         {/* Header Right Actions */}
         <div className="flex items-center gap-3 md:gap-5">
-          {/* Book / Request Quote CTA Button */}
-          <button
-            onClick={onOpenBooking}
+          <a
+            href="#kontakt"
             className={`hidden sm:inline-flex items-center justify-center px-6 py-2.5 rounded-full text-xs font-semibold tracking-wider uppercase transition-all duration-300 ${
               scrolled
                 ? 'border border-[#2F3A33] text-[#2F3A33] hover:bg-[#2F3A33] hover:text-white'
                 : 'bg-white text-[#2F3A33] hover:bg-[#D7C7AE] hover:text-[#1B241E] shadow-lg'
             }`}
           >
-            Book Your Stay
-          </button>
+            Contact Us
+          </a>
 
           {/* Mobile Menu Toggle Button */}
           <button
@@ -116,15 +115,13 @@ export default function Navbar({ navLinks, brand, onOpenBooking }) {
               </a>
             ))}
             <div className="pt-2 flex flex-col gap-3">
-              <button
-                onClick={() => {
-                  setMobileMenuOpen(false);
-                  onOpenBooking();
-                }}
+              <a
+                href="#kontakt"
+                onClick={() => setMobileMenuOpen(false)}
                 className="w-full py-3 bg-[#2F3A33] text-white rounded-full text-xs font-semibold uppercase tracking-wider text-center"
               >
-                Book Your Stay
-              </button>
+                Contact Us
+              </a>
             </div>
           </div>
         </div>

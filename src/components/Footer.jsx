@@ -27,7 +27,7 @@ export default function Footer({ brand, navLinks, contact }) {
         <div className="lg:col-span-5">
           <a href="#pocetna" className="inline-flex items-center gap-3.5 mb-6 leading-none">
             <img
-              src="./img/Logo.jpg"
+              src="./img/Logo.png"
               alt="Casa Maria Logo"
               className="w-12 h-12 rounded-full object-cover border border-[#D7C7AE]/50 shadow-md shrink-0"
             />
@@ -41,7 +41,7 @@ export default function Footer({ brand, navLinks, contact }) {
             </div>
           </a>
           <p className="text-sm text-white/70 leading-relaxed font-light max-w-sm">
-            An extraordinary beachfront sanctuary in Amunitan, Gonzaga, Cagayan. Designed for those who value privacy, bespoke hospitality, and effortless seaside living.
+            A private beach villa retreat in Amunitan, Gonzaga, Cagayan. Designed for those who value peace, privacy, and effortless coastal relaxation.
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function Footer({ brand, navLinks, contact }) {
         {/* Contact Info Column */}
         <div className="lg:col-span-3">
           <h4 className="font-serif text-lg text-[#EEE4D5] font-semibold mb-5">
-            Reservations
+            Contact & Inquiries
           </h4>
           <ul className="space-y-3 text-xs text-white/75 font-light">
             <li className="flex items-center gap-2.5">
@@ -153,7 +153,7 @@ export default function Footer({ brand, navLinks, contact }) {
 
       {/* Footer Bottom matching casamaria footer-bottom */}
       <div className="w-[92%] max-w-[1240px] mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
-        <p>© 2026 Casa Maria Beachfront Villa (<a href="https://casamariaph.com" className="hover:text-white underline underline-offset-2">casamariaph.com</a>). All rights reserved.</p>
+        <p>© 2026 Casa Maria Beach Villa (<a href="https://casamariaph.com" className="hover:text-white underline underline-offset-2">casamariaph.com</a>). All rights reserved.</p>
 
         <p className="flex items-center gap-1.5">
           <span>Developed by</span>

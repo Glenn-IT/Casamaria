@@ -2,8 +2,8 @@ export const villaContent = {
   villa: {
     brand: {
       name: "Casa Maria",
-      subtitle: "BEACHFRONT VILLA",
-      tagline: "Exclusive Private Sanctuary on the Amunitan Shoreline",
+      subtitle: "BEACH VILLA",
+      tagline: "Exclusive Private Sanctuary in Amunitan, Gonzaga",
       location: "83J6+75M Amunitan, Gonzaga, Cagayan",
       mapPin: "83J6+75M Amunitan, Gonzaga, Cagayan",
       website: "https://casamariaph.com",
@@ -20,32 +20,32 @@ export const villaContent = {
       { id: "kontakt", label: "Contact" },
     ],
     hero: {
-      eyebrow: "EXCLUSIVE BEACHFRONT RESIDENCE • GONZAGA, CAGAYAN",
-      titleMain: "Where Azure Sea",
+      eyebrow: "EXCLUSIVE BEACH VILLA • GONZAGA, CAGAYAN",
+      titleMain: "Where Coastal Calm",
       titleSub: "Meets Serene Luxury.",
-      description: "Nestled along the pristine shoreline of Amunitan in Gonzaga, Cagayan, Casa Maria offers an intimate beachfront sanctuary. Immerse yourself in panoramic ocean vistas, private infinity pools, and bespoke luxury hospitality tailored to your rhythm.",
-      ctaPrimary: "Reserve Your Stay",
-      ctaSecondary: "Explore Spaces",
+      description: "Nestled in the peaceful coastal haven of Amunitan in Gonzaga, Cagayan, Casa Maria is an intimate private beach villa just moments from the shore. Unwind in refreshing private swimming pools, breezy open-air living spaces, and warm hospitality tailored to your rhythm.",
+      ctaPrimary: "Explore Spaces",
+      ctaSecondary: "Contact Us",
       image: "./img/villa-panoramic-pool-living.jpg",
       highlights: [
         {
-          title: "Direct Beach Access",
-          desc: "Step directly onto secluded turquoise waters"
+          title: "Moments to the Shore",
+          desc: "A short stroll to the peaceful Amunitan coast"
         },
         {
           title: "Private Courtyard Pool",
           desc: "Illuminated two-tier swimming pool courtyard"
         },
         {
-          title: "Bespoke Concierge",
-          desc: "Dedicated villa manager, private chef & coastal excursions"
+          title: "Bespoke Hospitality",
+          desc: "Dedicated villa caretakers and tranquil private getaway"
         }
       ]
     },
     suitesSection: {
       kicker: "Accommodations & Suites",
       title: "Designed for effortless grandeur and timeless calm.",
-      description: "Each suite blends natural textures, warm timber ceilings, and floor-to-ceiling glass to dissolve boundaries between lavish interior comfort and the boundless sea."
+      description: "Each suite blends natural textures, warm timber ceilings, and expansive glass to dissolve boundaries between lavish interior comfort and serene coastal living."
     },
     suites: [
       {
@@ -70,12 +70,12 @@ export const villaContent = {
       },
       {
         number: "03",
-        title: "Amunitan Shoreline Haven",
-        tag: "Direct Beach Access • Golden Sunsets",
-        desc: "Unrivaled direct access to the secluded sandy beach of Amunitan, where gentle ocean waves meet golden hour skies and tranquil evening sea breezes.",
-        sqm: "Shoreline Access",
-        capacity: "Beachfront",
-        price: "Direct Access",
+        title: "Amunitan Coastal Haven",
+        tag: "Moments from the Beach • Golden Sunsets",
+        desc: "Enjoy easy walking access to the secluded beach of Amunitan, where gentle coastal breezes meet golden hour skies and peaceful scenery.",
+        sqm: "Beach Access",
+        capacity: "Coastal Escape",
+        price: "Short Walk to Beach",
         image: "./img/villa-beach-sunset.jpg"
       },
       {
@@ -112,10 +112,10 @@ export const villaContent = {
     about: {
       kicker: "About Casa Maria",
       title: "Where natural beauty meets architectural poetry.",
-      description: "Envisioned as a private seaside estate where architecture harmonizes with raw coastal tranquility. Featuring glowing evening pool courtyards, soaring timber ceilings, open glass living spaces, and direct steps to the Amunitan shoreline.",
+      description: "Envisioned as a private coastal retreat where architecture harmonizes with raw coastal tranquility. Featuring glowing evening pool courtyards, soaring timber ceilings, open glass living spaces, and close proximity to the serene Amunitan shore.",
       image: "./img/villa-poolside-evening.jpg",
       stats: [
-        { label: "Direct Beachfront", value: "85m" },
+        { label: "Walk to Beach", value: "2 Mins" },
         { label: "Private Estate", value: "2,400 m²" },
         { label: "Suites & Bedrooms", value: "6" },
         { label: "Guest Satisfaction", value: "100%" }
@@ -123,8 +123,8 @@ export const villaContent = {
       points: [
         {
           num: "01",
-          title: "Prime Shoreline Haven",
-          desc: "Wake up to gentle rolling waves and unhindered sea breezes just steps from your bedroom."
+          title: "Tranquil Coastal Setting",
+          desc: "Wake up to fresh sea breezes and peaceful coastal surroundings just moments from the water."
         },
         {
           num: "02",
@@ -133,42 +133,42 @@ export const villaContent = {
         },
         {
           num: "03",
-          title: "White-Glove Hospitality",
-          desc: "Dedicated estate staff, discreet daily housekeeping, and 24-hour personalized concierge service."
+          title: "Attentive Hospitality",
+          desc: "Dedicated estate staff, discreet daily housekeeping, and personalized caretaker assistance."
         },
         {
           num: "04",
-          title: "Culinary Excellence",
-          desc: "Private resident chef preparing daily catches, organic local produce, and Mediterranean tasting menus."
+          title: "Culinary & Dining Salon",
+          desc: "Private resident kitchen preparing fresh daily catches, local organic produce, and coastal tasting meals."
         }
       ]
     },
     process: {
-      kicker: "The Guest Journey",
+      kicker: "The Guest Experience",
       title: "Effortless planning. An unforgettable coastal escape.",
-      description: "From your initial reservation inquiry to your sunrise departure, every moment is thoughtfully curated for effortless luxury.",
+      description: "From your initial inquiry to your sunrise departure, every moment is curated for effortless comfort and relaxation.",
       steps: [
         {
           num: "01",
-          title: "Inquire & Select Dates",
-          desc: "Share your desired travel dates, party size, and bespoke preferences through our direct concierge form."
+          title: "Inquire & Connect",
+          desc: "Reach out via our inquiry form, WhatsApp, or direct mobile to check availability and special arrangements."
         },
         {
           num: "02",
-          title: "Personalized Itinerary",
-          desc: "Our villa director designs your tailored culinary menu, airport helicopter/yacht transfer, and private shoreline excursions."
+          title: "Personalized Stay",
+          desc: "Our caretakers coordinate your arrival details, dining preferences, and local recommendations."
         },
         {
           num: "03",
-          title: "Immerse in Paradise",
-          desc: "Arrive to chilled champagne, oceanfront sunsets, and complete peace of mind with our dedicated villa staff."
+          title: "Relax & Unwind",
+          desc: "Step into your private coastal sanctuary, take a dip in the courtyard pool, and stroll to the peaceful beach."
         }
       ]
     },
     gallery: {
       kicker: "Curated Visual Journey",
       title: "A glimpse into life at Casa Maria.",
-      description: "Explore the sun-dappled living spaces, crystalline infinity waters, and intimate seaside nooks of our private villa estate."
+      description: "Explore the sun-dappled living spaces, refreshing courtyard pools, and intimate coastal nooks of our private beach villa."
     },
     galleryImages: [
       {
@@ -194,7 +194,7 @@ export const villaContent = {
       },
       {
         id: 4,
-        title: "Amunitan Beachfront Sunset",
+        title: "Amunitan Coastline Sunset",
         category: "Beach",
         span: "wide",
         url: "./img/villa-beach-sunset.jpg"
@@ -263,7 +263,7 @@ export const villaContent = {
       items: [
         {
           title: "Absolute Exclusivity",
-          desc: "The entire villa and private seaside estate are solely reserved for your family or private group."
+          desc: "The entire villa and private estate are solely reserved for your family or private group."
         },
         {
           title: "Discretion & Security",
@@ -271,47 +271,47 @@ export const villaContent = {
         },
         {
           title: "Artisanal Quality",
-          desc: "Every detail—from hand-pressed Egyptian cotton sheets to bespoke beach loungers—is pure perfection."
+          desc: "Every detail—from comfortable bedding to serene outdoor relaxation areas—is carefully maintained."
         },
         {
           title: "Total Flexibility",
-          desc: "Flexible check-in times, customized meal timings, and on-demand yacht excursions tailored to your mood."
+          desc: "Flexible check-in times and customized schedules tailored to your holiday rhythm."
         }
       ]
     },
     faq: {
       kicker: "Guest Questions",
       title: "Everything to know before your arrival.",
-      description: "Explore answers regarding booking policies, estate amenities, private transfers, and concierge offerings.",
+      description: "Explore answers regarding villa amenities, location, stay arrangements, and guest policies.",
       items: [
         {
           q: "What is the maximum capacity and suite configuration of Casa Maria?",
-          a: "Casa Maria accommodates up to 12 adult guests across 6 master bedroom suites, each featuring en-suite spa bathrooms and sea views. Additional child beds or cribs can be accommodated upon request."
+          a: "Casa Maria accommodates up to 12 adult guests across 6 master bedroom suites, each featuring en-suite spa bathrooms. Additional child beds or cribs can be accommodated upon request."
         },
         {
-          q: "Are private chef services and daily breakfast included?",
-          a: "Yes. Villa reservations include a daily gourmet Mediterranean breakfast prepared fresh by our resident chef, daily afternoon aperitivo, and full access to our private chef for lunch and dinner banquets."
+          q: "Is the villa close to the beach?",
+          a: "Yes! While Casa Maria is a private enclosed beach villa compound with private pools and lush privacy, the serene shoreline of Amunitan is just a short 2-minute stroll away."
         },
         {
           q: "How do we arrange airport transfers or coastal excursions?",
-          a: "Our private concierge coordinates comfortable transfers from Tuguegarao Airport (TUG) or Cagayan North International Airport (LLC), as well as direct boat excursions around Gonzaga and Palaui Island."
+          a: "Our team coordinates comfortable transfers from Tuguegarao Airport (TUG) or Cagayan North International Airport (LLC), as well as direct boat excursions around Gonzaga and Palaui Island."
         },
         {
           q: "Is the villa fully private for our group during our stay?",
-          a: "Yes, 100% private. When you reserve Casa Maria, the entire 2,400 m² beachfront estate, private infinity pool, beach terrace, and gardens are exclusively yours."
+          a: "Yes, 100% private. When you book your staycation at Casa Maria, the entire private beach villa estate, courtyard swimming pool, living spaces, and gardens are exclusively yours."
         },
         {
-          q: "What are the check-in, check-out, and cancellation terms?",
-          a: "Standard check-in is from 3:00 PM and check-out is by 11:00 AM, with flexible early arrival or late departure accommodated whenever possible. Free cancellation is offered up to 30 days prior to arrival."
+          q: "What are the check-in and check-out times?",
+          a: "Standard check-in is from 3:00 PM and check-out is by 11:00 AM, with flexible early arrival or late departure accommodated whenever possible upon advance notice."
         }
       ]
     },
     contact: {
-      kicker: "Direct Reservations",
-      title: "Your secluded beachfront haven awaits.",
-      description: "Contact our dedicated villa director for bespoke inquiries, availability dates, or exclusive staycation reservations.",
+      kicker: "Contact & Inquiries",
+      title: "Your secluded coastal haven awaits.",
+      description: "Contact us directly for inquiries, rates, and private villa staycation details.",
       statNumber: "500+",
-      statLabel: "discerning guests hosted with 5-star perfection",
+      statLabel: "discerning guests hosted with 5-star satisfaction",
       phone: "0956 019 3089",
       phoneRaw: "09560193089",
       phoneIntl: "+63 956 019 3089",
@@ -329,11 +329,11 @@ export const villaContent = {
     }
   },
 
-  // Lorem Ipsum Edition (requested in note.md: "mekt it lorepimsom ok the casamaria a beach fornt villa")
+  // Lorem Ipsum Edition (requested in note.md)
   lorem: {
     brand: {
       name: "Casa Maria",
-      subtitle: "BEACHFRONT VILLA",
+      subtitle: "BEACH VILLA",
       tagline: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
       location: "Lorem Riviera, Mare Nostrum"
     },
@@ -521,7 +521,7 @@ export const villaContent = {
       },
       {
         id: 4,
-        title: "Amunitan Beachfront Sunset",
+        title: "Amunitan Coastline Sunset",
         category: "Beach",
         span: "wide",
         url: "./img/villa-beach-sunset.jpg"

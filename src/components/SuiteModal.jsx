@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { X, Check, Maximize2, Users, Bed, Sparkles, ArrowRight } from 'lucide-react';
 
-export default function SuiteModal({ suite, onClose, onBookSuite }) {
+export default function SuiteModal({ suite, onClose }) {
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') onClose();
@@ -13,13 +13,13 @@ export default function SuiteModal({ suite, onClose, onBookSuite }) {
   if (!suite) return null;
 
   const features = [
-    "180° Panoramic Ocean & Shoreline View",
-    "Private cantilevered terrace & outdoor sun loungers",
-    "Italian marble bathroom with rain shower & soaking tub",
-    "Complimentary daily gourmet breakfast prepared by private chef",
-    "24/7 dedicated butler & concierge service",
-    "Ultra-high-speed fiber Wi-Fi & Bang & Olufsen sound system",
-    "Daily evening turn-down service with organic lavender amenities"
+    "Peaceful courtyard & garden views with coastal sea breeze",
+    "Private terrace access & outdoor relaxation deck",
+    "Italian marble bathroom with rainfall shower",
+    "Direct step-out to illuminated swimming pool courtyard",
+    "Dedicated caretaker and hospitality assistance",
+    "High-speed fiber Wi-Fi & Smart entertainment setup",
+    "Daily housekeeping and fresh organic amenities"
   ];
 
   return (
@@ -99,16 +99,14 @@ export default function SuiteModal({ suite, onClose, onBookSuite }) {
             >
               Close
             </button>
-            <button
-              onClick={() => {
-                onClose();
-                onBookSuite(suite);
-              }}
+            <a
+              href="#kontakt"
+              onClick={onClose}
               className="w-full sm:w-auto px-8 py-3 rounded-full bg-[#2F3A33] hover:bg-[#586B5A] text-white text-xs font-bold uppercase tracking-wider shadow-lg flex items-center justify-center gap-2 transition-all"
             >
-              <span>Reserve This Suite</span>
+              <span>Inquire About Villa</span>
               <ArrowRight className="w-3.5 h-3.5" />
-            </button>
+            </a>
           </div>
         </div>
       </div>

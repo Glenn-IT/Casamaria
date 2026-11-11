@@ -12,7 +12,7 @@ export default function AboutVilla({ data }) {
           <div className="relative rounded-[26px] overflow-hidden shadow-2xl border-4 border-white/60 aspect-[4/5] bg-stone-200">
             <img
               src={data.image || "./img/villa-poolside-evening.jpg"}
-              alt="Casa Maria Beachfront Villa Architecture"
+              alt="Casa Maria Beach Villa Architecture"
               className="w-full h-full object-cover img-zoom"
               loading="lazy"
             />
@@ -23,7 +23,7 @@ export default function AboutVilla({ data }) {
           <div className="absolute -bottom-6 -right-4 sm:right-6 bg-white rounded-2xl p-4 shadow-[0_20px_45px_rgba(47,58,51,0.15)] border border-[#D7C7AE]/60 max-w-[240px]">
             <div className="flex items-center gap-3">
               <img
-                src="./img/Logo.jpg"
+                src="./img/Logo.png"
                 alt="Casa Maria Emblem"
                 className="w-11 h-11 rounded-full object-cover border border-[#D7C7AE]/50 shadow-sm shrink-0"
               />
@@ -32,7 +32,7 @@ export default function AboutVilla({ data }) {
                   Private Sanctuary
                 </strong>
                 <span className="text-[10px] text-[#586B5A] tracking-wider uppercase font-semibold">
-                  Beachfront Villa
+                  Beach Villa
                 </span>
               </div>
             </div>

@@ -12,7 +12,6 @@ import BookingContact from './components/BookingContact';
 import Footer from './components/Footer';
 import LightboxModal from './components/LightboxModal';
 import SuiteModal from './components/SuiteModal';
-import BookingModal from './components/BookingModal';
 
 import { villaContent } from './data/villaData';
 
@@ -20,15 +19,8 @@ export default function App() {
   const [loading, setLoading] = useState(true);
   const [selectedSuite, setSelectedSuite] = useState(null);
   const [lightboxImage, setLightboxImage] = useState(null);
-  const [bookingModalOpen, setBookingModalOpen] = useState(false);
-  const [bookingPreselectedSuite, setBookingPreselectedSuite] = useState(null);
 
   const activeData = villaContent.villa;
-
-  const handleOpenBooking = (suite = null) => {
-    setBookingPreselectedSuite(suite);
-    setBookingModalOpen(true);
-  };
 
   return (
     <div className="min-h-screen bg-[#F7F5F2] text-[#2D2D2D] selection:bg-[#586B5A] selection:text-white font-sans antialiased relative">
@@ -44,13 +36,11 @@ export default function App() {
       <Navbar
         navLinks={activeData.nav}
         brand={activeData.brand}
-        onOpenBooking={() => handleOpenBooking(null)}
       />
 
       {/* Hero Section */}
       <Hero
         data={activeData.hero}
-        onOpenBooking={() => handleOpenBooking(null)}
       />
 
       {/* Suites & Accommodations Section (Services equivalent) */}
@@ -79,13 +69,9 @@ export default function App() {
       {/* FAQ Accordion Section */}
       <FaqSection data={activeData.faq} />
 
-      {/* Booking & Contact Section */}
+      {/* Contact & Inquiries Section */}
       <BookingContact
         data={activeData.contact}
-        onOpenBookingModal={(data) => {
-          setBookingPreselectedSuite({ title: data.suite });
-          setBookingModalOpen(true);
-        }}
       />
 
       {/* Footer */}
@@ -104,16 +90,6 @@ export default function App() {
       <SuiteModal
         suite={selectedSuite}
         onClose={() => setSelectedSuite(null)}
-        onBookSuite={(suite) => handleOpenBooking(suite)}
-      />
-
-      <BookingModal
-        isOpen={bookingModalOpen}
-        onClose={() => {
-          setBookingModalOpen(false);
-          setBookingPreselectedSuite(null);
-        }}
-        preselectedSuite={bookingPreselectedSuite}
       />
     </div>
   );

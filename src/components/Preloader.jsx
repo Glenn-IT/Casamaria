@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-export default function Preloader({ onComplete, subtitle = "BEACHFRONT VILLA" }) {
+export default function Preloader({ onComplete, subtitle = "BEACH VILLA" }) {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
@@ -22,7 +22,7 @@ export default function Preloader({ onComplete, subtitle = "BEACHFRONT VILLA" })
     >
       <div className="flex flex-col items-center text-center">
         <img
-          src="./img/Logo.jpg"
+          src="./img/Logo.png"
           alt="Casa Maria Logo"
           className="w-24 h-24 rounded-full object-cover border-2 border-[#D7C7AE]/60 shadow-lg mb-5 animate-pulse"
         />

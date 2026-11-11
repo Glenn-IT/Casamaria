@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 
-export default function Hero({ data, onOpenBooking }) {
+export default function Hero({ data }) {
   return (
     <section
       id="pocetna"
@@ -40,16 +40,16 @@ export default function Hero({ data, onOpenBooking }) {
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-4 mt-9">
-          <button
-            onClick={onOpenBooking}
+          <a
+            href="#suites"
             className="inline-flex items-center justify-center min-h-[52px] px-8 rounded-full text-xs font-bold tracking-wider uppercase bg-white text-[#2F3A33] hover:bg-[#D7C7AE] hover:text-[#1B241E] hover:-translate-y-0.5 transition-all duration-300 shadow-[0_15px_40px_rgba(0,0,0,0.2)]"
           >
             <span>{data.ctaPrimary}</span>
             <ArrowUpRight className="w-4 h-4 ml-1.5" />
-          </button>
+          </a>
 
           <a
-            href="#suites"
+            href="#kontakt"
             className="inline-flex items-center justify-center min-h-[52px] px-8 rounded-full text-xs font-bold tracking-wider uppercase border border-white/40 text-white hover:bg-white/15 hover:border-white transition-all duration-300 backdrop-blur-sm"
           >
             {data.ctaSecondary}
