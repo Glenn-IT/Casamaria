@@ -1,6 +1,6 @@
 # 🧠 Casa Maria Beach Villa — System Memory & Technical Documentation
 
-> **File:** `system memory.md` (also accessible as `system_memory.md`)  
+> **File:** `system_memory.md` / `system memory.md`  
 > **Last Verified:** Current System State  
 > **Environment:** Windows (PowerShell) / Node.js v24+ / XAMPP Apache  
 > **Project Directory:** `C:\xampp\htdocs\Casamaria`  
@@ -221,13 +221,26 @@ All operational scripts are managed via [`package.json`](file:///C:/xampp/htdocs
 | `npm run dev` | `vite` | Starts local development server at `http://localhost:5173/` with Hot Module Replacement (HMR). |
 | `npm run build` | `vite build` | Compiles and optimizes assets into the `dist/` directory (HTML, CSS, minified JS chunks). |
 | `npm run preview` | `vite preview` | Locally serves the compiled production build from `dist/` for pre-flight testing. |
+| `npm run deploy-prod` | `npm run build && git push dist to production` | Automatically builds production bundle and force-pushes `dist/` contents directly to the GitHub `production` branch for Hostinger Git Deployment. |
 | `npm run package` | `npm run build && Compress-Archive` | Compiles production build and creates a ready-to-upload `deploy.zip` containing `dist/*` and `dist/.htaccess`. |
 
 ---
 
 ## 🌐 7. Deployment & Hosting Strategy
 
-### Method A: Hostinger Single Web Hosting (Production)
+### Method A: Hostinger Single Web Hosting (`casamariaph.com`)
+
+#### 1. Git Auto-Deployment via `production` Branch (Primary & Recommended)
+- **Repository**: `Glenn-IT/Casamaria`
+- **Hostinger Target Branch**: **`production`** *(never deploy `main` directly to Hostinger, as `main` contains raw uncompiled React source code and Hostinger shared hosting does not run Node.js/Vite builds)*.
+- **Root Directory**: `public_html`
+- **Automated Update Workflow**:
+  ```powershell
+  npm run deploy-prod
+  ```
+  *(This compiles the latest code into `dist/` and force-pushes all production assets, `.htaccess`, and `index.html` to the `production` branch. Hostinger then pulls the new build immediately into `public_html`).*
+
+#### 2. Hostinger File Manager via ZIP (Manual Fallback)
 - **Target Folder**: Hostinger `public_html/`.
 - **Workflow**:
   1. Run `npm run package` (or `npm run build`).
