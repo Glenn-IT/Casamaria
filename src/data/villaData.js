@@ -116,8 +116,8 @@ export const villaContent = {
       image: "./img/villa-poolside-evening.jpg",
       stats: [
         { label: "Walk to Beach", value: "2 Mins" },
-        { label: "Private Estate", value: "2,400 m²" },
-        { label: "Suites & Bedrooms", value: "6" },
+        { label: "Guest Capacity", value: "8–16" },
+        { label: "Bedrooms (1 Master)", value: "4" },
         { label: "Guest Satisfaction", value: "100%" }
       ],
       points: [
@@ -285,16 +285,16 @@ export const villaContent = {
       description: "Explore answers regarding villa amenities, location, stay arrangements, and guest policies.",
       items: [
         {
-          q: "What is the maximum capacity and suite configuration of Casa Maria?",
-          a: "Casa Maria accommodates up to 12 adult guests across 6 master bedroom suites, each featuring en-suite spa bathrooms. Additional child beds or cribs can be accommodated upon request."
+          q: "What is the maximum capacity and room configuration of Casa Maria?",
+          a: "Casa Maria comfortably accommodates 8 to 16 guests. The villa features 4 private bedrooms including 1 spacious Master Bedroom, offering the ideal layout for families and exclusive group staycations."
         },
         {
           q: "Is the villa close to the beach?",
-          a: "Yes! While Casa Maria is a private enclosed beach villa compound with private pools and lush privacy, the serene shoreline of Amunitan is just a short 2-minute stroll away."
+          a: "Yes! While Casa Maria is an intimate enclosed private beach villa compound with private pools and lush privacy, the serene shoreline of Amunitan is just a short 2-minute stroll away."
         },
         {
-          q: "How do we arrange airport transfers or coastal excursions?",
-          a: "Our team coordinates comfortable transfers from Tuguegarao Airport (TUG) or Cagayan North International Airport (LLC), as well as direct boat excursions around Gonzaga and Palaui Island."
+          q: "Where is the villa located and how do we get there?",
+          a: "Casa Maria Beach Villa is located at Barangay Amunitan, Gonzaga, Cagayan (Google Maps Plus Code: 83J6+75M Amunitan). You can easily navigate directly using Google Maps or Waze, and our villa caretakers are available to provide direct road directions and welcome you upon arrival."
         },
         {
           q: "Is the villa fully private for our group during our stay?",
@@ -302,7 +302,7 @@ export const villaContent = {
         },
         {
           q: "What are the check-in and check-out times?",
-          a: "Standard check-in is from 3:00 PM and check-out is by 11:00 AM, with flexible early arrival or late departure accommodated whenever possible upon advance notice."
+          a: "Standard check-in is at 2:00 PM and check-out is at 12:00 PM (Noon). Flexible early arrival or late departure arrangements may be coordinated with advance notice, subject to availability."
         }
       ]
     },

@@ -114,7 +114,7 @@ flowchart TD
 - **Purpose**: Brand storytelling and architectural background.
 - **Functionality**:
   - Left column: Aspect-ratio framed architectural imagery with floating circular emblem badge.
-  - Right column: Narrative story, 4-metric quick stats bar (2 Mins to Beach, 2,400 m² Estate, 6 Suites, 100% Satisfaction).
+  - Right column: Narrative story, 4-metric quick stats bar (2 Mins to Beach, 8–16 Guest Capacity, 4 Bedrooms (1 Master), 100% Satisfaction).
   - 4 numbered value pillars with Lucide icons (Tranquil Coastal Setting, Uncompromising Privacy, Attentive Hospitality, Culinary & Dining Salon).
 
 #### 7. `ExperienceProcess.jsx`
@@ -151,7 +151,7 @@ flowchart TD
 - **Purpose**: Interactive accordion answering common guest inquiries.
 - **Functionality**:
   - Single-item active accordion state (`openIndex`) with smooth animation.
-  - Covers capacity (up to 12 adult guests), beach proximity (2-minute stroll), airport transfer options (Tuguegarao TUG or Cagayan North LLC), 100% private compound policy, and check-in/out policies (3:00 PM check-in / 11:00 AM check-out).
+  - Covers capacity (8 to 16 guests across 4 bedrooms, 1 master bedroom), beach proximity (2-minute stroll), direct villa location in Barangay Amunitan (Google Maps Plus Code 83J6+75M), 100% private compound policy, and check-in/out policies (2:00 PM check-in / 12:00 PM check-out).
 
 #### 12. `BookingContact.jsx`
 - **Purpose**: Main conversion section featuring contact points and reservation inquiry form.

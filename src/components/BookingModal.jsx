@@ -120,10 +120,10 @@ export default function BookingModal({ isOpen, onClose, preselectedSuite }) {
                     onChange={(e) => setFormData({ ...formData, guests: e.target.value })}
                     className="w-full px-3.5 py-2.5 rounded-xl border border-[#2F3A33]/15 text-sm bg-white focus:outline-none focus:border-[#586B5A]"
                   >
-                    <option value="1-2">1 - 2 Guests</option>
-                    <option value="3-4">3 - 4 Guests</option>
+                    <option value="1-4">1 - 4 Guests</option>
                     <option value="5-8">5 - 8 Guests</option>
-                    <option value="9-12">9 - 12 Guests (Full Villa)</option>
+                    <option value="8-12">8 - 12 Guests</option>
+                    <option value="12-16">12 - 16 Guests (Full Villa Capacity)</option>
                   </select>
                 </div>
                 <div>
