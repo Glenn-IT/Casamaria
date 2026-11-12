@@ -37,9 +37,12 @@ export default function FaqSection({ data }) {
                 <button
                   type="button"
                   onClick={() => toggleIndex(index)}
-                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-serif text-lg sm:text-xl text-[#2F3A33] hover:text-[#586B5A] transition-colors"
+                  className="w-full text-left px-6 py-5 flex items-center justify-between gap-4 font-serif text-[#2F3A33] hover:text-[#586B5A] transition-colors"
+                  aria-expanded={isOpen}
                 >
-                  <span className="font-medium pr-2">{item.q}</span>
+                  <h3 className="font-serif text-lg sm:text-xl font-medium pr-2 text-inherit">
+                    {item.q}
+                  </h3>
                   <div className="w-8 h-8 rounded-full bg-[#F7F5F2] flex items-center justify-center shrink-0 text-[#2F3A33]">
                     {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
                   </div>

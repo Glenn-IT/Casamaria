@@ -64,6 +64,9 @@
     />
     <meta name="twitter:image" content="https://casamariaph.com/img/villa-panoramic-pool-living.jpg" />
 
+    <!-- LLM / Agent-Native Alternate Resource Link -->
+    <link rel="alternate" type="text/markdown" href="https://casamariaph.com/llms.txt" title="LLM Knowledge Base" />
+
     <!-- Google Fonts Preconnect & Stylesheet -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -72,69 +75,148 @@
       rel="stylesheet"
     />
 
-    <!-- Schema.org JSON-LD Structured Data for LodgingBusiness / Hotel / Resort -->
+    <!-- Comprehensive Schema.org JSON-LD Structured Data: LodgingBusiness, LocalBusiness, Organization, FAQPage -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LodgingBusiness",
-        "@id": "https://casamariaph.com/#lodging",
-        "name": "Casa Maria Beach Villa",
-        "alternateName": ["Casa Maria Beach Villa", "Casa Maria PH", "Casa Maria"],
-        "url": "https://casamariaph.com/",
-        "logo": "https://casamariaph.com/img/Logo.png",
-        "image": [
-          "https://casamariaph.com/img/villa-panoramic-pool-living.jpg",
-          "https://casamariaph.com/img/villa-master-bedroom.jpg",
-          "https://casamariaph.com/img/villa-pool-night.jpg",
-          "https://casamariaph.com/img/villa-beach-sunset.jpg"
-        ],
-        "description": "Casa Maria is an exclusive private beach villa and staycation sanctuary located in Amunitan, Gonzaga, Cagayan, Philippines.",
-        "telephone": "+639560193089",
-        "priceRange": "₱₱",
-        "currenciesAccepted": "PHP",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "83J6+75M Amunitan",
-          "addressLocality": "Gonzaga",
-          "addressRegion": "Cagayan",
-          "postalCode": "3513",
-          "addressCountry": "PH"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 18.330688,
-          "longitude": 122.060438
-        },
-        "hasMap": "https://www.google.com/maps/search/?api=1&query=83J6%2B75M+Amunitan%2C+Gonzaga%2C+Cagayan",
-        "sameAs": [
-          "https://web.facebook.com/casamariaph",
-          "https://www.instagram.com/casamariabeachvilla"
-        ],
-        "amenityFeature": [
+        "@graph": [
           {
-            "@type": "LocationFeatureSpecification",
-            "name": "Private Swimming Pool",
-            "value": true
+            "@type": ["LodgingBusiness", "LocalBusiness", "Organization"],
+            "@id": "https://casamariaph.com/#business",
+            "name": "Casa Maria Beach Villa",
+            "legalName": "Casa Maria Beach Villa",
+            "alternateName": ["Casa Maria Beach Villa", "Casa Maria PH", "Casa Maria"],
+            "url": "https://casamariaph.com/",
+            "logo": "https://casamariaph.com/img/Logo.png",
+            "image": [
+              "https://casamariaph.com/img/villa-panoramic-pool-living.jpg",
+              "https://casamariaph.com/img/villa-master-bedroom.jpg",
+              "https://casamariaph.com/img/villa-pool-night.jpg",
+              "https://casamariaph.com/img/villa-beach-sunset.jpg"
+            ],
+            "description": "Casa Maria is an intimate private luxury beach villa and staycation sanctuary located in Barangay Amunitan, Gonzaga, Cagayan, Philippines. Featuring 4 private bedrooms (1 Master Suite), private courtyard swimming pool, and serene oceanfront calm for 8 to 16 guests.",
+            "telephone": "+639560193089",
+            "email": "reservations@casamariaph.com",
+            "priceRange": "₱₱",
+            "currenciesAccepted": "PHP",
+            "paymentAccepted": "Cash, GCash, Bank Transfer",
+            "checkinTime": "14:00",
+            "checkoutTime": "12:00",
+            "numberOfRooms": 4,
+            "petsAllowed": "Upon Request",
+            "smokingAllowed": false,
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Barangay Amunitan",
+              "addressLocality": "Gonzaga",
+              "addressRegion": "Cagayan",
+              "postalCode": "3513",
+              "addressCountry": "PH"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.330688,
+              "longitude": 122.060438
+            },
+            "hasMap": "https://www.google.com/maps/search/?api=1&query=83J6%2B75M+Amunitan%2C+Gonzaga%2C+Cagayan",
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                  "Saturday",
+                  "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+              }
+            ],
+            "sameAs": [
+              "https://web.facebook.com/casamariaph",
+              "https://www.instagram.com/casamariabeachvilla"
+            ],
+            "amenityFeature": [
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Private Swimming Pool",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Direct Beach Access",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Air Conditioning",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Free High-Speed Wi-Fi",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Private Kitchen & Dining Pavilion",
+                "value": true
+              },
+              {
+                "@type": "LocationFeatureSpecification",
+                "name": "Caretaker & Concierge Service",
+                "value": true
+              }
+            ]
           },
           {
-            "@type": "LocationFeatureSpecification",
-            "name": "Direct Beach Access",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Air Conditioning",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Free High-Speed Wi-Fi",
-            "value": true
-          },
-          {
-            "@type": "LocationFeatureSpecification",
-            "name": "Private Chef & Dining Salon",
-            "value": true
+            "@type": "FAQPage",
+            "@id": "https://casamariaph.com/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is the maximum capacity and room configuration of Casa Maria?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Casa Maria comfortably accommodates 8 to 16 guests. The villa features 4 private bedrooms including 1 spacious Master Bedroom, offering the ideal layout for families and exclusive group staycations."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the villa close to the beach?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! While Casa Maria is an intimate enclosed private beach villa compound with private pools and lush privacy, the serene shoreline of Amunitan is just a short 2-minute stroll away."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where is the villa located and how do we get there?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Casa Maria Beach Villa is located at Barangay Amunitan, Gonzaga, Cagayan (Google Maps Plus Code: 83J6+75M Amunitan). You can easily navigate directly using Google Maps or Waze, and our villa caretakers are available to provide direct road directions and welcome you upon arrival."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is the villa fully private for our group during our stay?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, 100% private. When you book your staycation at Casa Maria, the entire private beach villa estate, courtyard swimming pool, living spaces, and gardens are exclusively yours."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the check-in and check-out times?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Standard check-in is at 2:00 PM and check-out is at 12:00 PM (Noon). Flexible early arrival or late departure arrangements may be coordinated with advance notice, subject to availability."
+                }
+              }
+            ]
           }
         ]
       }

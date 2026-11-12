@@ -75,9 +75,9 @@ export default function GallerySection({ headerData, images, onOpenLightbox }) {
                       <span className="text-[10px] font-semibold uppercase tracking-widest text-[#D7C7AE]">
                         {img.category}
                       </span>
-                      <h4 className="text-lg font-serif font-medium text-white">
+                      <h3 className="text-lg font-serif font-medium text-white">
                         {img.title}
-                      </h4>
+                      </h3>
                     </div>
                     <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
                       <Expand className="w-4 h-4" />

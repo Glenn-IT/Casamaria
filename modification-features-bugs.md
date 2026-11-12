@@ -1,5 +1,11 @@
-Maximum Capacity - is 8 to 16 People/ it only has a 4 Bedrooms 1 Master Bedroom
-Remove the transport change it for the driect and barangay of the Villa
-Check in is 2PM and check out is 12 PM
+![alt text](image-4.png)
+![alt text](image-5.png)
+![alt text](image-6.png)
+![alt text](image-7.png)
+![alt text](image-8.png)
+![alt text](image-9.png)
+![alt text](image-10.png)
 
-Guest Questions Area
+AI visibility
+Check how well AI tools like ChatGPT, Claude and Perplexity can read your website, and track your score over time
+![alt text](image-11.png)

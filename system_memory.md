@@ -271,6 +271,13 @@ All operational scripts are managed via [`package.json`](file:///C:/xampp/htdocs
    - `index.html` includes complete Schema.org `LodgingBusiness` JSON-LD structured data, Open Graph meta tags, Twitter card tags, and geographic coordinates for Gonzaga, Cagayan (`18.330688, 122.060438`).
 4. **Data Isolation**:
    - UI components consume copy directly from `villaData.js`. Never hardcode textual content or contact details inside individual JSX components.
+5. **AI Visibility & Generative Engine Optimization (GEO)**:
+   - Configured `public/llms.txt` and `public/llms-full.txt` following the LLMs.txt standard for AI agents (ChatGPT, Claude, Perplexity, Gemini).
+   - `.htaccess` configured with `Link` header advertising `/llms.txt`, content negotiation for `text/markdown`, and real HTTP 404 status codes for missing assets and unknown paths.
+   - `robots.txt` explicitly allows top AI bots and declares Content Signals.
+   - `index.html` Schema.org multi-typed `@graph` covers `LodgingBusiness`, `LocalBusiness`, `Organization`, and `FAQPage`.
+   - Heading hierarchy strictly enforced (`<h1>` in Hero only, `<h2>` section headers, `<h3>` subheadings).
+   - Legal & Privacy modal added to `Footer.jsx`. Complete audit and resolution details in [`AI_VISIBILITY_DOCUMENTATION.md`](file:///C:/xampp/htdocs/Casamaria/AI_VISIBILITY_DOCUMENTATION.md).
 
 ---
 

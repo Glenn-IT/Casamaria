@@ -3,13 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://casamariaph.com/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://casamariaph.com/img/villa-panoramic-pool-living.jpg</image:loc>
       <image:title>Casa Maria Beach Villa Panoramic Living and Pool</image:title>
-      <image:caption>Casa Maria Beach Villa in Amunitan, Gonzaga, Cagayan, Philippines</image:caption>
+      <image:caption>Casa Maria Beach Villa in Barangay Amunitan, Gonzaga, Cagayan, Philippines</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://casamariaph.com/img/villa-master-bedroom.jpg</image:loc>
@@ -23,5 +23,17 @@
       <image:loc>https://casamariaph.com/img/villa-beach-sunset.jpg</image:loc>
       <image:title>Casa Maria Amunitan Beach Sunset</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://casamariaph.com/llms.txt</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://casamariaph.com/llms-full.txt</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

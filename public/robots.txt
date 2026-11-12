@@ -1,4 +1,40 @@
+# Casa Maria Beach Villa Robots.txt
 User-agent: *
 Allow: /
+
+# AI Crawlers & LLM Agents
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Content Signals / AI Readiness
+# Content-Signal: search=yes, ai-train=yes
+# LLM-Documentation: https://casamariaph.com/llms.txt
 
 Sitemap: https://casamariaph.com/sitemap.xml

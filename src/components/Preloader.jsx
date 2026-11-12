@@ -26,9 +26,9 @@ export default function Preloader({ onComplete, subtitle = "BEACH VILLA" }) {
           alt="Casa Maria Logo"
           className="w-24 h-24 rounded-full object-cover border-2 border-[#D7C7AE]/60 shadow-lg mb-5 animate-pulse"
         />
-        <h1 className="text-4xl md:text-5xl font-serif text-[#2F3A33] tracking-wide mb-2">
+        <div className="text-4xl md:text-5xl font-serif text-[#2F3A33] tracking-wide mb-2 font-medium">
           Casa Maria
-        </h1>
+        </div>
         <span className="text-[10px] md:text-xs font-semibold tracking-[0.35em] text-[#586B5A] uppercase mb-6">
           {subtitle}
         </span>
