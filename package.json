@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "deploy-prod": "npm run build && powershell -Command \"Push-Location dist; if (Test-Path .git) { Remove-Item -Recurse -Force .git }; git init; git checkout -b production; git add -A; git commit -m 'Production release'; git remote add origin https://github.com/Glenn-IT/Casamaria.git; git push origin production --force; Remove-Item -Recurse -Force .git; Pop-Location\"",
     "package": "npm run build && powershell -Command \"Compress-Archive -Path dist/*, dist/.htaccess -DestinationPath deploy.zip -Force\""
   },
   "dependencies": {
