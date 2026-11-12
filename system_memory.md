@@ -163,7 +163,11 @@ flowchart TD
     - Facebook: `https://web.facebook.com/casamariaph`
     - Instagram: `@casamariabeachvilla`
     - Location: `83J6+75M Amunitan, Gonzaga, Cagayan` (with Google Maps URL)
-  - **Interactive Inquiry Form**: Client-side validated form fields (Name, Email, Phone, Message) with real-time submission confirmation feedback.
+  - **Interactive Inquiry Form & Email Dispatch**:
+    - Dispatches to Hostinger backend endpoint [`public/send-inquiry.php`](file:///C:/xampp/htdocs/Casamaria/public/send-inquiry.php).
+    - Sends branded HTML notification email directly to `reservations@casamariaph.com`.
+    - Includes honeypot spam protection (`website` field) and optional guest auto-reply.
+    - Features animated loading state (`Loader2` spinner) and real-time confirmation UI.
 
 #### 13. `BookingModal.jsx`
 - **Purpose**: Secondary dedicated booking dialog with calendar check-in/out pickers and preselected suite binding.
