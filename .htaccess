@@ -1,0 +1,49 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Force HTTPS
+  RewriteCond %{HTTPS} off
+  RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 2. Agent-Native Content: Serve llms.txt when agent requests Markdown or well-known route
+  RewriteRule ^\.well-known/llms\.txt$ llms.txt [L]
+  RewriteCond %{HTTP:Accept} text/markdown [NC]
+  RewriteCond %{REQUEST_URI} ^/$
+  RewriteRule ^$ llms.txt [L]
+
+  # 3. Return a real HTTP 404 for missing static assets & files
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} \.(jpg|jpeg|png|gif|ico|webp|svg|css|js|json|xml|txt|pdf|php|woff|woff2|ttf|eot)$ [NC]
+  RewriteRule ^ - [R=404,L]
+
+  # 4. Return real HTTP 404 for arbitrary missing subpaths (this is a root single-page site)
+  # Allow root /, /index.html, /index.php, /dist/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !^/(index\.(html|php)|dist/)?$
+  RewriteRule ^ - [R=404,L]
+
+  # 5. Route root requests to index.html
+  RewriteRule ^$ index.html [L]
+</IfModule>
+
+# Advertise llms.txt alternate resource header for AI agents
+<IfModule mod_headers.c>
+  Header set Link '<https://casamariaph.com/llms.txt>; rel="alternate"; type="text/markdown"'
+</IfModule>
+
+# Browser & LiteSpeed Caching
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpg "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+  ExpiresByType text/markdown "access plus 1 day"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
